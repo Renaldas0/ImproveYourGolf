@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,16 +11,19 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- JQuery -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <title>Improve Your Golf</title>
 </head>
 <body>
+    <!-- Navigation -->
     <nav id="navbar">
-        <a href="#" class="nav-brand">Improve Your Golf</a>
+        <a href="#" class="nav-brand">
+            <img src="/static/images/Golf_ball.jpg" alt="golf ball">
+        </a>
         
         <ul class="nav-menu">
             <li class="menu-item">
@@ -40,11 +45,18 @@
                 <a href="#" class="nav-link">Log In</a>
             </li>
         </ul>
-        <div class="burger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
     </nav>
+    <!-- Main heading -->
+
+    <h1 id="main-header">Improve Your Golf</h1>
+
+    <div>
+        <h2 id="mid-text">Welcome to our website</h2>
+    </div>
+    <div>
+        <a href="#">
+            <button class="btn">Tell Me More!</button>
+        </a>
+    </div>
 </body>
 </html>

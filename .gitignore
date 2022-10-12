@@ -7,3 +7,6 @@ __pycache__/
 node_modules/
 .github/
 cloudinary_python.txt
+
+#username is admin
+#password is adminpass
