@@ -1,1 +1,1 @@
-web: gunicorn improveyourgolf.wsgi
+web: gunicorn django_golf.wsgi
