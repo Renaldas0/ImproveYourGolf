@@ -12,20 +12,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
+    <!-- Bootstrap 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    -->
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <title>Improve Your Golf</title>
 </head>
 <body>
     <!-- Navigation -->
-    <nav id="navbar">
-        <a href="#" class="nav-brand">
-            <img src="" alt="golf ball">
-        </a>
-        
-        <ul class="nav-menu">
+    <nav>
+        <label class="logo">
+        <!-- Main Heading-->
+            <a href="#" class="nav-brand">
+                <h1 class="main-header">Improve Your Golf</h1>
+            </a>
+        </label>
+            <!-- Register and Login -->
+        <ul id="register-menu">
+            <li class="menu-item">
+                <a href="#" class="nav-link">Register</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="nav-link">Log In</a>
+            </li>
+        </ul>
+
+            <!-- Page Navigation -->
+        <ul id="nav-menu">
             <li class="menu-item">
                 <a href="#" class="nav-link">About</a>
             </li>
@@ -38,26 +52,18 @@
             <li class="menu-item">
                 <a href="#" class="nav-link">Contact Us</a>
             </li>
-            <li class="menu-item">
-                <a href="#" class="nav-link">Register</a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="nav-link">Log In</a>
-            </li>
         </ul>
     </nav>
-    <!-- Main heading -->
-
-    <h1 id="main-header">Improve Your Golf</h1>
 
     <div>
         <h2 id="mid-text">Welcome to our website</h2>
     </div>
-    <div>
+    <div class="btn">
         <a href="#">
             <button class="btn">Tell Me More!</button>
         </a>
     </div>
+    <!--About Us-->
     <div>
         <h2 id="Goal-header">Our Goal is To</h2>
         <p class="goal-para">Help you improve your golf game “as our name suggests”.
@@ -69,6 +75,63 @@
             to Improve Your Golf.
         </p>
     </div>
+
+    <!-- Classes -->
+    <div class="classes">
+        <img src="" alt="">
+        <h2>Learn more about the classes that we offer below</h2>
+    </div>
+
+    <!-- About our classes-->
+    <div class="class-container">
+        <div class="description">
+            <img src="" alt="">
+            <p>
+                Sample paragraph
+            </p>
+            <div></div>
+        </div>
+        <div class="description">
+            <img src="" alt="">
+            <p>
+                Sample paragraph
+            </p>
+            <div></div>
+        </div>
+        <div class="description">
+            <img src="" alt="">
+            <p>
+                Sample paragraph
+            </p>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- About our coaches-->
+    <div id="coach-container">
+        <div class="coach">
+            <img src="" alt="">
+            <p>
+                
+            </p>
+        </div>
+        <div class="coach">
+            <img src="" alt="">
+            <p>
+
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Us-->
+    <div class="contact">
+        <h3>Have any Questions?</h3>
+    </div>
+
+    <!-- Footer-->
+    <footer>
+
+    </footer>
     
 </body>
 </html>
