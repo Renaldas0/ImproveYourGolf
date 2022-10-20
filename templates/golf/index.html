@@ -34,19 +34,19 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#home-page">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link" href="#about-page">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Classes</a>
+                    <a class="nav-link" href="#lessons-page">Classes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Coaches</a>
+                    <a class="nav-link" href="#coaches-page">Coaches</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#contact">Contact Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Register</a>
@@ -60,12 +60,13 @@
         </div>
       </nav>
 
+      <!-- Home section-->
     <div id="home-page" class="wrapper">
         <img src="/static/images/main.jpg" class="main-img">
             <h2 class="mid-text">Welcome to our website</h2>
-                <button type="button" class="btn btn-success"><a href="#">Tell Me More!</a></button>   
+                <button type="button" class="btn btn-success"><a href="#about-page">Tell Me More!</a></button>   
     </div>
-    <!--About Us-->
+    <!--About Us section-->
     <div id="about-page">
         <img src="/static/images/ball-near-flag.jpg" alt="golf ball near a flag" class="about-img">
             <h2 class="about-text">Our Goal is To</h2>
@@ -79,23 +80,39 @@
             </p>
     </div>
 
-    <!-- About our classes-->
-    <div class="container text-center">
+    <!-- Lessons section-->
+    <div class="container text-center" id="lessons-page">
         <div class="row align-items-start">
           <div class="col">
-            Sample paragraph
+            <div class="lesson-image">
+              <img src="" alt="">
+            </div>
+            <div class="lesson-text">
+              <h3></h3>
+              <p></p>
+            </div>
           </div>
           <div class="col">
-            Sample paragraph
+            <div class="lesson-image">
+              <img src="/static/images/child.jpg" alt="child playing golf">
+            </div>
+              <div class="lesson-text">
+                <h3></h3>
+                <p></p>
+              </div>
           </div>
           <div class="col">
-            Sample paragraph
+            <div class="lesson-image"></div>
+            <div class="lesson-text">
+              <h3></h3>
+              <p></p>
+            </div>
           </div>
         </div>
     </div>
 
     <!-- About our coaches-->
-    <div id="coach-container">
+    <div id="coaches-page">
         <div class="coach">
             <img src="" alt="">
             <p>
@@ -110,8 +127,8 @@
         </div>
     </div>
 
-    <!-- Contact Us-->
-    <div class="contact">
+    <!-- Contact Us section-->
+    <div id="contact">
         <h3>Have any Questions?</h3>
     </div>
 

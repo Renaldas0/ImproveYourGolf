@@ -89,6 +89,23 @@ body{
     font-weight: 400;
 }
 
+.col{
+    height: 650px;
+    background-color: grey;
+    margin: 30px 10px;
+    padding: 0;
+}
+
+.lesson-image{
+    height:55%;
+    width: 100%;
+}
+
+.lesson-image img{
+    width: 100%;
+    height: 300px;
+}
+
 
 
 
