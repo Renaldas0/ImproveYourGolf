@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -6,24 +6,28 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Lato', sans-serif;
 }
 
-.navbar-brand{
+/* Navbar */
+
+.navbar-brand {
     font-size: 40px;
     font-weight: 600;
 }
 
-.navbar{
+.navbar {
     position: fixed;
 }
 
-.wrapper{
+/* Home Section */
+
+.wrapper {
     margin-top: 0;
 }
 
-.main-img{
+.main-img {
     width: 100%;
     height: 800px;
     object-fit: cover;
@@ -31,7 +35,7 @@ body{
     position: relative;
 }
 
-.mid-text{
+.mid-text {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -40,30 +44,32 @@ body{
     font-weight: 400;
 }
 
-.btn{
-    border:solid black 2px;
+.btn {
+    border: solid black 2px;
     height: 60px;
     width: 200px;
-    background:transparent;
+    background: transparent;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.btn a{
+.btn a {
     color: black;
     text-decoration: none;
     font-size: 25px;
 }
 
-#about-page{
+/* About Us Section*/
+
+#about-page {
     position: relative;
     text-align: center;
     color: black;
 }
 
-.about-img{
+.about-img {
     margin-top: 80px;
     width: 100%;
     height: 800px;
@@ -71,7 +77,7 @@ body{
     object-position: centre;
 }
 
-.about-text{
+.about-text {
     position: absolute;
     top: 30%;
     left: 25%;
@@ -79,7 +85,7 @@ body{
     font-size: 50px;
 }
 
-.about-para{
+.about-para {
     position: absolute;
     top: 50%;
     left: 25%;
@@ -89,32 +95,72 @@ body{
     font-weight: 400;
 }
 
+/* Classes Section*/
+
 .row {
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.column{
-    height: 700px;
+.column {
+    height: 800px;
     width: 30%;
     background-color: grey;
-    margin: 30px 10px;
+    margin: 80px 10px;
     padding: 0;
+    position: relative;
 }
 
 
-.lesson-image img{
+.lesson-image img {
     width: 100%;
     height: 400px;
 }
 
+/* Lesson Lists*/
 
+h3 {
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
 
+.lesson-list {
+    text-align: left;
+}
 
+.lesson-list span {
+    font-weight: bold;
+}
 
+.lesson-list li {
+    margin-top: 5px;
+}
 
+.login-note {
+    border-radius: 5px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(210, 238, 130, 0.6);
+}
 
+.login-note p {
+    line-height: 50px;
+    color: black;
+    font-weight: bold;
+}
 
+.coaches-page {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
 
-
+.coach {
+    width: 40%;
+    height: 40%;
+    display: inline-block;
+}

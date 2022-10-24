@@ -2,144 +2,192 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora:ital@1&family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <!-- Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-    <title>Improve Your Golf</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora:ital@1&family=Oswald:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <title>Improve Your Golf</title>
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar fixed-top">
-        <div class="container-fluid">
-          <h1><a class="navbar-brand" href="#">Improve Your Golf</a></h1>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Improve Your Golf</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#home-page">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about-page">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#lessons-page">Classes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#coaches-page">Coaches</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Register</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
-                  </li>
-              </ul>
-            </div>
+  <!-- Navigation -->
+  <nav class="navbar fixed-top">
+    <div class="container-fluid">
+      <h1><a class="navbar-brand" href="#home-page">Improve Your Golf</a></h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Improve Your Golf</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home-page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-page">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lessons-page">Classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#coaches-page">Coaches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home section-->
+  <div id="home-page" class="wrapper">
+    <img src="/static/images/main.jpg" class="main-img">
+    <h2 class="mid-text">Welcome to our website</h2>
+    <button type="button" class="btn btn-success"><a href="#about-page">Tell Me More!</a></button>
+  </div>
+  <!--About Us section-->
+  <div id="about-page">
+    <img src="/static/images/ball-near-flag.jpg" alt="golf ball near a flag" class="about-img">
+    <h2 class="about-text">Our Goal is To</h2>
+    <p class="about-para">Help you improve your golf game “as our name suggests”.
+      Lower your handicap on a consistant basis with the right
+      practice techniques advised by our professionals.
+
+      We will help you find where the costly errors are in <strong>YOUR</strong>
+      golf game and work together using golf simulators
+      to Improve Your Golf.
+    </p>
+  </div>
+
+  <!-- Lessons section-->
+  <div class="container text-center" id="lessons-page">
+    <div class="row align-items-start">
+      <div class="column">
+        <div class="lesson-image">
+          <img src="/static/images/putting.jpg" alt="man practicing putting">
+        </div>
+        <div class="lesson-text">
+          <h3>Short game</h3>
+          <ul class="lesson-list">
+            <li><span>Day of the week:</span> Monday</li>
+            <li><span>Lesson Begins:</span> 7pm</li>
+            <li><span>Lesson Ends:</span> 8pm</li>
+            <li><span>Description:</span> In this lesson we will be teaching the fundamentals of the short game aspect
+              in
+              <strong>Golf</strong>.Short game is definitely the most important part
+              of shooting a consistant low score. Lessons include chipping, putting and pitching drills and advice from
+              our Professional coaches.</li>
+          </ul>
+          <!-- Div displaying login message-->
+          <div class="login-note display">
+            <p class="display">You must be Logged in to book a class.</p>
           </div>
         </div>
-      </nav>
-
-      <!-- Home section-->
-    <div id="home-page" class="wrapper">
-        <img src="/static/images/main.jpg" class="main-img">
-            <h2 class="mid-text">Welcome to our website</h2>
-                <button type="button" class="btn btn-success"><a href="#about-page">Tell Me More!</a></button>   
-    </div>
-    <!--About Us section-->
-    <div id="about-page">
-        <img src="/static/images/ball-near-flag.jpg" alt="golf ball near a flag" class="about-img">
-            <h2 class="about-text">Our Goal is To</h2>
-            <p class="about-para">Help you improve your golf game “as our name suggests”.
-            Lower your handicap on a consistant basis with the right
-            practice techniques advised by our professionals.
-            
-            We will help you find where the costly errors are in <strong>YOUR</strong> 
-            golf game and work together using golf simulators 
-            to Improve Your Golf.
-            </p>
-    </div>
-
-    <!-- Lessons section-->
-    <div class="container text-center" id="lessons-page">
-        <div class="row align-items-start">
-          <div class="column">
-            <div class="lesson-image">
-              <img src="/static/images/putting.jpg" alt="man practicing putting">
-            </div>
-            <div class="lesson-text">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="lesson-image">
-              <img src="/static/images/child.jpg" alt="child playing golf">
-            </div>
-              <div class="lesson-text">
-                <h3></h3>
-                <p></p>
-              </div>
-          </div>
-          <div class="column">
-            <div class="lesson-image">
-              <img src="/static/images/long-game.jpg" alt="man holding a golf club after swinging">
-            </div>
-            <div class="lesson-text">
-              <h3></h3>
-              <p></p>
-            </div>
+      </div>
+      <div class="column">
+        <div class="lesson-image">
+          <img src="/static/images/child.jpg" alt="child playing golf">
+        </div>
+        <div class="lesson-text">
+          <h3>Kids club</h3>
+          <ul class="lesson-list">
+            <li><span>Day of the week:</span> Wednesday</li>
+            <li><span>Lesson Begins:</span> 7pm</li>
+            <li><span>Lesson Ends:</span> 8pm</li>
+            <li><span>Description:</span> In the Kids Club we welcome all kids from the ages of <strong>5 - 17</strong>.
+              This
+              class is created to teach children the fundamentals of the golf game,
+              help them make new friends with the same hobby and improve their game through drills and fun games.
+            </li>
+          </ul>
+          <!-- Div displaying login message-->
+          <div class="login-note display">
+            <p class="display">You must be Logged in to book a class.</p>
           </div>
         </div>
-    </div>
-
-    <!-- About our coaches-->
-    <div id="coaches-page">
-        <div class="coach">
-            <img src="" alt="">
-            <p>
-                
-            </p>
+      </div>
+      <div class="column">
+        <div class="lesson-image">
+          <img src="/static/images/long-game.jpg" alt="man holding a golf club after swinging">
         </div>
-        <div class="coach">
-            <img src="" alt="">
-            <p>
-
-            </p>
+        <div class="lesson-text">
+          <h3>Long game</h3>
+          <ul class="lesson-list">
+            <li><span>Day of the week:</span> Friday</li>
+            <li><span>Lesson Begins:</span> 7pm</li>
+            <li><span>Lesson Ends:</span> 8pm</li>
+            <li><span>Description:</span> In the Long Game class, we aim to teach golfers the ability to control every
+              club in the bag ranging from the wedge and working
+              all the way up to the driver. Through the use of <strong>Trackman</strong> technology we pinpoint areas in
+              every aspect for you to improve on.</li>
+          </ul>
+          <!-- Div displaying login message-->
+          <div class="login-note display">
+            <p class="display">You must be Logged in to book a class.</p>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Contact Us section-->
-    <div id="contact">
-        <h3>Have any Questions?</h3>
+  <!-- About our coaches-->
+  <div id="coaches-page">
+    <div class="coach">
+      <img src="/static/images/coach-1.jpg" alt="picture of our coach">
+      <p>
+
+      </p>
     </div>
+    <div class="coach">
+      <img src="/static/images/coach-2.jpg" alt="picture of our coach">
+      <p>
 
-    <!-- Footer-->
-    <footer>
+      </p>
+    </div>
+  </div>
 
-    </footer>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    
+  <!-- Contact Us section-->
+  <div id="contact">
+    <h3>Have any Questions?</h3>
+  </div>
+
+  <!-- Footer-->
+  <footer>
+
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+  </script>
+
 </body>
+
 </html>
