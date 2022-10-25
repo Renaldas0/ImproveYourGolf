@@ -153,14 +153,64 @@ h3 {
     font-weight: bold;
 }
 
-.coaches-page {
-    position: relative;
-    height: 500px;
-    width: 100%;
+/* Make a Booking Button */
+
+.book-btn {
+    position: absolute;
+    bottom: 5px;
+    left: 40%;
 }
 
-.coach {
-    width: 40%;
-    height: 40%;
-    display: inline-block;
+.btn-sm {
+    padding: 2px;
+}
+
+/* Coaches Section */
+
+.coaches-container {
+    background-image: url(/static/images/coach-container-img.jpg);
+    width: 85%;
+    margin: auto;
+    height: 600px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.coach-1 {
+    position: absolute;
+    left: 20%;
+    top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.coach-2 {
+    position: absolute;
+    right: 20%;
+    top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.about-coach-1 {
+    border-radius: 5px;
+    max-width: 40%;
+    height: 400px;
+    position: absolute;
+    top: 180px;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.about-coach-2 {
+    border-radius: 5px;
+    max-width: 40%;
+    height: 400px;
+    position: absolute;
+    top: 180px;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
