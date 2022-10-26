@@ -17,3 +17,6 @@ from django.views import generic
 
 def main_page(request):
     return render(request, 'golf/index.html')
+
+def login_page(request):
+    return render(request, 'golf/login.html')

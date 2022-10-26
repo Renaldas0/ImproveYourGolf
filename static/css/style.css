@@ -176,6 +176,8 @@ h3 {
     border-radius: 5px;
 }
 
+/* Coach Images*/
+
 .coach-1 {
     position: absolute;
     left: 20%;
@@ -195,22 +197,109 @@ h3 {
     border-radius: 50%;
 }
 
+/* Coach Description Box*/
+
 .about-coach-1 {
     border-radius: 5px;
     max-width: 40%;
-    height: 400px;
+    height: 300px;
     position: absolute;
     top: 180px;
     left: 5%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .about-coach-2 {
     border-radius: 5px;
     max-width: 40%;
-    height: 400px;
+    height: 300px;
     position: absolute;
     top: 180px;
     right: 5%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.about-coach-1 h4,
+.about-coach-2 h4 {
+    font-weight: 800;
+    font-size: 25px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-coach-para {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#contact {
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: #4F7942;
+    height: auto;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-container h3 {
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 15px;
+}
+
+.socials a {
+    color: #000;
+}
+
+.socials i {
+    font-size: 1.5rem;
+    transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    background-color: #50C878;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #000;
+    opacity: .7;
+    font-weight: bold;
 }
