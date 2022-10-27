@@ -33,3 +33,7 @@
   - When a user logs in this message disappears and the 'Book Now' button appears
   - The responsive features set the columns to align from 3 across to a 2,1 layout and then in a row formation for mobile devices
   - Each class has a different image to indicate the type of lesson to expect
+
+- **Coaches**
+  - The coaches section consists of 2 images that show the coaches and a brief description
+  - The responsive feature also changes the layout for these 2 divs, making them fall one under the other for smaller devices
