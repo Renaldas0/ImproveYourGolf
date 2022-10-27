@@ -26,3 +26,10 @@
   - Once the user scrolls for better user experience, the navbar is set to always be visible and a background colour appears
   - For extra functionality there is a button which if clicked simply scrolls down to the About Us section
   - Clicking on sections in the navbar scrolls the page down to that desired section
+
+- **Classes**
+  - The classes section is designed to look different for authenticated users and those who are not logged in
+  - If a user is not logged in then a message at the bottom of the class description appears to inform a user they must first login
+  - When a user logs in this message disappears and the 'Book Now' button appears
+  - The responsive features set the columns to align from 3 across to a 2,1 layout and then in a row formation for mobile devices
+  - Each class has a different image to indicate the type of lesson to expect
