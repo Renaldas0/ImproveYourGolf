@@ -12,3 +12,9 @@
   - Ability for users to place bookings for their desired class
   - Ability for users to change or cancel their bookings
   - The layout of certain sections changes, dpending if a user is logged in or not.
+
+- **Admin Features**
+  - As an admin I have the ability to login 
+  - Admin is able to see all placed reservations and control them
+  - Admin can see who placed the reservations by their login details
+  - Most importantly the admin can update or delete any reservations
