@@ -18,3 +18,11 @@
   - Admin is able to see all placed reservations and control them
   - Admin can see who placed the reservations by their login details
   - Most importantly the admin can update or delete any reservations
+
+- **Site Features**
+  - The site is developed to be a single scroll page except for the register and login forms
+  - The main section loads up with an image displaying the theme of the website (golf) and the title clearly visible to users
+  - The navbar is compact into a hamburger menu icon and is transparent if the page is at the complete top
+  - Once the user scrolls for better user experience, the navbar is set to always be visible and a background colour appears
+  - For extra functionality there is a button which if clicked simply scrolls down to the About Us section
+  - Clicking on sections in the navbar scrolls the page down to that desired section
