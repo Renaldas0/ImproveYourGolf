@@ -26,6 +26,7 @@
   - Once the user scrolls for better user experience, the navbar is set to always be visible and a background colour appears
   - For extra functionality there is a button which if clicked simply scrolls down to the About Us section
   - Clicking on sections in the navbar scrolls the page down to that desired section
+  - Clicking on the heading will also scroll the page back up to the top
 
 - **Classes**
   - The classes section is designed to look different for authenticated users and those who are not logged in
