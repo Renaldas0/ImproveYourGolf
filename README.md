@@ -27,7 +27,8 @@
   - For extra functionality there is a button which if clicked simply scrolls down to the About Us section
   - Clicking on sections in the navbar scrolls the page down to that desired section
   - Clicking on the heading will also scroll the page back up to the top
-{Main section screenshot image}
+
+[Main section]
 
 - **Classes**
   - The classes section is designed to look different for authenticated users and those who are not logged in
@@ -35,15 +36,18 @@
   - When a user logs in this message disappears and the 'Book Now' button appears
   - The responsive features set the columns to align from 3 across to a 2,1 layout and then in a row formation for mobile devices
   - Each class has a different image to indicate the type of lesson to expect
+
 {Classes section screenshot}
 
 - **Coaches**
   - The coaches section consists of 2 images that show the coaches and a brief description
   - The responsive feature also changes the layout for these 2 divs, making them fall one under the other for smaller devices
+
 {Coaches section screenshot}
 
 - **Register & Login Forms**
   - When the register or login option is selected by the user, they are redirected to the form page.
   - These forms are of very simplistic design for easy and satisfying user experience.
   - Both forms are designed to look the same and contain the same navbar and footer elements as on the main page.
+
 {both form images}
