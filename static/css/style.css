@@ -303,3 +303,6 @@ footer {
     opacity: .7;
     font-weight: bold;
 }
+
+/* Media Queries*/
+@media screen and (mex-width:1565px) {}

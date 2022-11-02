@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from golf.views import main_page, login_page
+from golf.views import main_page, login_page, register_page
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main_page, name='main_page'),
-    path('login.html', login_page, name='login_page')
+    path('login.html', login_page, name='login_page'),
+    path('register.html', register_page, name='register_page')
 ]

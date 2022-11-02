@@ -20,3 +20,6 @@ def main_page(request):
 
 def login_page(request):
     return render(request, 'golf/login.html')
+
+def register_page(request):
+    return render(request, 'golf/register.html')
