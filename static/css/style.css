@@ -169,19 +169,40 @@ h3 {
 
 .coaches-container {
     background-image: url(/static/images/coach-container-img.jpg);
-    width: 85%;
     margin: auto;
-    height: 600px;
+    width: 100vw;
+    height: 60vh;
     position: relative;
     border-radius: 5px;
+}
+
+.col {
+    margin: 2%;
+    border-radius: 6px;
+    width: 40%;
+    height: 90vh;
+}
+
+/* Coach Description Box */
+
+.about-coach-para {
+    background-color: rgba(185, 185, 185, 0.7);
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.about-coach-para h4 {
+    font-weight: 800;
+    font-size: 1.6rem;
 }
 
 /* Coach Images*/
 
 .coach-1 {
-    position: absolute;
-    left: 20%;
-    top: 20px;
+    margin-top: auto;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -189,52 +210,13 @@ h3 {
 }
 
 .coach-2 {
-    position: absolute;
-    right: 20%;
-    top: 20px;
+    margin-top: auto;
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
 
-/* Coach Description Box*/
 
-.about-coach-1 {
-    border-radius: 5px;
-    max-width: 40%;
-    height: 300px;
-    position: absolute;
-    top: 180px;
-    left: 5%;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-.about-coach-2 {
-    border-radius: 5px;
-    max-width: 40%;
-    height: 300px;
-    position: absolute;
-    top: 180px;
-    right: 5%;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-.about-coach-1 h4,
-.about-coach-2 h4 {
-    font-weight: 800;
-    font-size: 25px;
-    text-decoration: underline;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-coach-para {
-    padding: 5px;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
 
 #contact {
     margin-top: 30px;
@@ -303,6 +285,3 @@ footer {
     opacity: .7;
     font-weight: bold;
 }
-
-/* Media Queries*/
-@media screen and (mex-width:1565px) {}
