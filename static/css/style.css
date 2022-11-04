@@ -44,7 +44,7 @@ body {
     font-weight: 400;
 }
 
-.btn {
+.about-btn {
     border: solid black 2px;
     height: 60px;
     width: 200px;
@@ -53,6 +53,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 25px;
 }
 
 .btn a {
@@ -98,20 +99,11 @@ body {
 /* Classes Section*/
 
 .row {
+    margin: 80px 0 80px;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-
-.column {
-    height: 800px;
-    width: 30%;
-    background-color: grey;
-    margin: 80px 10px;
-    padding: 0;
-    position: relative;
-}
-
 
 .lesson-image img {
     width: 100%;
@@ -120,14 +112,25 @@ body {
 
 /* Lesson Lists*/
 
+.lesson-text {
+    background-color: rgba(210, 238, 130, 0.6);
+    min-height: 400px;
+    position: relative;
+}
+
+.lesson-image {
+    margin-top: 5px;
+}
+
 h3 {
     font-weight: bold;
     text-transform: capitalize;
-    margin-top: 10px;
+
 }
 
 .lesson-list {
     text-align: left;
+    padding: 5px;
 }
 
 .lesson-list span {
@@ -136,33 +139,6 @@ h3 {
 
 .lesson-list li {
     margin-top: 5px;
-}
-
-.login-note {
-    border-radius: 5px;
-    position: absolute;
-    bottom: 40px;
-    width: 100%;
-    height: 50px;
-    background-color: rgba(210, 238, 130, 0.6);
-}
-
-.login-note p {
-    line-height: 50px;
-    color: black;
-    font-weight: bold;
-}
-
-/* Make a Booking Button */
-
-.book-btn {
-    position: absolute;
-    bottom: 5px;
-    left: 40%;
-}
-
-.btn-sm {
-    padding: 2px;
 }
 
 /* Coaches Section */
@@ -284,4 +260,100 @@ footer {
     color: #000;
     opacity: .7;
     font-weight: bold;
+}
+
+/* Media Queries*/
+
+@media screen and (max-width:1048px) {
+    .coaches-container {
+        height: 80vh;
+    }
+
+    .mid-text {
+        font-size: 40px;
+    }
+
+    .about-text {
+        left: 45%;
+    }
+
+    .about-para {
+        left: 45%;
+        background-color: rgba(185, 185, 185, 0.7);
+        border-radius: 5px;
+        font-weight: 600;
+        padding: 4px;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width:845px) {
+    .mid-text {
+        font-size: 35px;
+        top: 35%;
+        text-align: center;
+    }
+
+    .about-btn {
+        height: 40px;
+        width: 160px;
+        top: 45%;
+    }
+
+    .about-btn a {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-text {
+        top: 20%;
+    }
+}
+
+@media screen and (max-width:695px) {
+    .about-img {
+        margin-top: 60px;
+    }
+
+    .row {
+        margin: 60px 0 60px;
+    }
+
+    .coach-row {
+        display: block;
+    }
+
+    .coach-col {
+        width: 90vw;
+        height: auto;
+    }
+
+    .coaches-container {
+        height: fit-content;
+        padding: 5px 0 5px;
+    }
+
+    .class-col {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width:635px) {
+    .mid-text {
+        text-align: center;
+        top: 35%;
+    }
+}
+
+@media screen and (max-width:565px) {
+    .about-para {
+        width: 80vw;
+    }
+
+    .about-text {
+        font-size: 40px;
+        top: 15%;
+    }
 }
