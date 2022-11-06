@@ -265,6 +265,19 @@ footer {
     font-weight: bold;
 }
 
+/* Login / Register Forms*/
+
+.login-row {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px grey;
+}
+
+.login-img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
 /* Media Queries*/
 
 @media screen and (max-width:1048px) {
