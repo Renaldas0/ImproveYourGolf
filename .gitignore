@@ -8,5 +8,5 @@ node_modules/
 .github/
 cloudinary_python.txt
 
-#username is admin
-#password is adminpass
+#username is golf_admin
+#password is password1234

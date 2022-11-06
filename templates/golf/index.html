@@ -57,19 +57,25 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact Us</a>
             </li>
+            {% if user.is_authenticated %}
             <li class="nav-item">
-              <a class="nav-link" href="register.html">Register</a>
+              <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
+              <a class="nav-link" href="{% url 'account_login' %}">Login</a>
             </li>
+            {% endif %}
           </ul>
         </div>
       </div>
     </div>
   </nav>
 
-  <!--{% block content %}-->
+
 
   <!-- Home section-->
   <div id="home-page" class="wrapper">
@@ -200,13 +206,6 @@
     </div>
   </div>
 
-
-
-
-
-
-
-
   <!-- Contact Us section-->
   <div id="contact">
     <h3>Have any Questions?</h3>
@@ -219,8 +218,6 @@
       </li>
     </ul>
   </div>
-
-  <!--{% endblock content %}-->
 
   <!-- Footer-->
   <footer>

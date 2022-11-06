@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background: rgb(219, 226, 226);
 }
 
 /* Navbar */
@@ -198,6 +199,8 @@ h3 {
     margin-top: 30px;
     text-align: center;
 }
+
+/* Footer */
 
 footer {
     background-color: #4F7942;
