@@ -7,4 +7,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main_page, name='main_page'),
     path('accounts/', include('allauth.urls')),
+    path("booking/", include("booking.urls")),
 ]
