@@ -1,5 +1,7 @@
 {% extends "golf/index.html" %}
 
+{% load static %}
+
 {% load i18n %}
 {% load account socialaccount %}
 
@@ -10,7 +12,7 @@
   <div class="container">
     <div class="row login-row g-0">
       <div class="col-lg-5">
-        <img src="/static/images/login.jpg" alt="golf ball being teed up" class="img-fluid login-img">
+        <img src="{% static 'images/login.jpg' %}" alt="golf ball being teed up" class="img-fluid login-img">
       </div>
 
       <div class="col-lg-7 px-5 pt-5">

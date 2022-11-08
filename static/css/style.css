@@ -150,7 +150,7 @@ h3 {
 /* Coaches Section */
 
 .coaches-container {
-    background-image: url(/static/images/coach-container-img.jpg);
+    background-color: #264a1b;
     margin: auto;
     width: 100vw;
     height: 60vh;

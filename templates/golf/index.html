@@ -7,6 +7,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Golf lessons for adults and kids">
+  <meta name="keywords"
+    content="golf, community, lessons, golf lessons, coaching, training, get better at golf, improve golf">
   <!-- Google Fonts-->
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora:ital@1&family=Oswald:wght@300&display=swap"
@@ -79,13 +82,13 @@
 
   <!-- Home section-->
   <div id="home-page" class="wrapper">
-    <img src="/static/images/main.jpg" class="main-img">
+    <img src="{% static 'images/main-page.jpg' %}" class="main-img" alt="man swinging a golf club">
     <h2 class="mid-text">Welcome to our website</h2>
     <button type="button" class="about-btn btn btn-success"><a href="#about-page">Tell Me More!</a></button>
   </div>
   <!--About Us section-->
   <div id="about-page">
-    <img src="/static/images/ball-near-flag.jpg" alt="golf ball near a flag" class="about-img">
+    <img src="{% static 'images/ball-near-flag.jpg' %}" alt="golf ball near a flag" class="about-img">
     <h2 class="about-text">Our Goal is To</h2>
     <p class="about-para">Help you improve your golf game “as our name suggests”.
       Lower your handicap on a consistant basis with the right
@@ -102,7 +105,7 @@
     <div class="row align-items-start">
       <div class="col-lg-4 col-md-6 class-col">
         <div class="lesson-image">
-          <img src="/static/images/putting.jpg" alt="man practicing putting">
+          <img src="{% static 'images/putting.jpg' %}" alt="man practicing putting">
         </div>
         <div class="lesson-text">
           <h3>Short game</h3>
@@ -124,7 +127,7 @@
       </div>
       <div class="col-lg-4 col-md-6 class-col">
         <div class="lesson-image">
-          <img src="/static/images/child.jpg" alt="child playing golf">
+          <img src="{% static 'images/child-class.jpg' %}" alt="child playing golf">
         </div>
         <div class="lesson-text">
           <h3>Kids club</h3>
@@ -146,7 +149,7 @@
       </div>
       <div class="col-lg-4 col-md-7 class-col">
         <div class="lesson-image">
-          <img src="/static/images/long-game.jpg" alt="man holding a golf club after swinging">
+          <img src="{% static 'images/long-game.jpg' %}" alt="man holding a golf club after swinging">
         </div>
         <div class="lesson-text">
           <h3>Long game</h3>
@@ -173,7 +176,7 @@
     <div class="container-fluid text-center coaches-container">
       <div class="row coach-row">
         <div class="col coach-col">
-          <img src="/static/images/coach-1.jpg" alt="Picture of our coach" class="coach-1">
+          <img src="{% static 'images/coach-1.jpg' %}" alt="Picture of our coach" class="coach-1">
           <div class="about-coach-para">
             <h4>James Anderson</h4>
             <p>
@@ -187,7 +190,7 @@
 
         </div>
         <div class="col coach-col">
-          <img src="/static/images/coach-2.jpg" alt="Picture of our coach" class="coach-2">
+          <img src="{% static 'images/coach-2.jpg' %}" alt="Picture of our coach" class="coach-2">
           <div class="about-coach-para">
             <h4>Edgar Davidson</h4>
             <p>

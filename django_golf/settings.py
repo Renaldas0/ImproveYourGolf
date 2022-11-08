@@ -60,6 +60,10 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-renaldas0-improveyourgo-s49vroit6cn.ws-eu74.gitpod.io']
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -131,6 +135,8 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
+
+DATE_INPUT_FORMAT = ['%d/%M/%Y', ]
 
 USE_I18N = True
 
