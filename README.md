@@ -28,7 +28,9 @@
   - Clicking on sections in the navbar scrolls the page down to that desired section
   - Clicking on the heading will also scroll the page back up to the top
 
-[Main section]
+## Main section
+![main-screenshot](https://user-images.githubusercontent.com/97538312/201192933-98a6b956-1bc9-43e9-84d8-8ba22933ffd2.jpg)
+
 
 - **Classes**
   - The classes section is designed to look different for authenticated users and those who are not logged in
@@ -37,7 +39,12 @@
   - The responsive features set the columns to align from 3 across to a 2,1 layout and then in a row formation for mobile devices
   - Each class has a different image to indicate the type of lesson to expect
 
-{Classes section screenshot}
+## Classes when not logged in 
+![classes_notauth](https://user-images.githubusercontent.com/97538312/201193183-2252d2ed-a915-4d1d-b734-fa61ae8fb172.jpg)
+
+## Classes to logged in viewers 
+![classes_auth](https://user-images.githubusercontent.com/97538312/201193253-d616c879-8851-4726-9fb6-ada64418b095.jpg)
+
 
 - **Coaches**
   - The coaches section consists of 2 images that show the coaches and a brief description
