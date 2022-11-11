@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'crispy_forms',
+    'crispy_bootstrap5',
     'booking',
     'golf',
 ]
@@ -58,10 +59,11 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-renaldas0-improveyourgo-s49vroit6cn.ws-eu74.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-renaldas0-improveyourgo-s49vroit6cn.ws-eu75.gitpod.io']
 
 
 MIDDLEWARE = [

@@ -2,20 +2,17 @@
 from datetime import date
 from django import forms
 from django.conf import settings
-from .models import Customer, Booking
+from .models import Customer, Booking, ClassName
 
 
 today = date.today()
 
 
 class CustomerForm(forms.ModelForm):
-    """ The Customer Form Model """
-    email = forms.EmailField(required=False)
-
     class Meta:
-        """Custome Field Form """
+        """Customer Form """
         model = Customer
-        fields = ('user_name', 'email')
+        fields = ('user_name', 'email',)
 
 
 class BookingForm(forms.ModelForm):
@@ -25,4 +22,4 @@ class BookingForm(forms.ModelForm):
     class Meta:
         """Booking form field"""
         model = Booking
-        fields = ('class_name', 'requested_date')
+        fields = ('class_name', 'requested_date',)

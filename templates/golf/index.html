@@ -15,7 +15,7 @@
     href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora:ital@1&family=Oswald:wght@300&display=swap"
     rel="stylesheet">
   <!-- Title Icon link-->
-  <link rel="icon" href="/static/images/Golf_ball.svg.png" type="image/icon type">
+  <link rel="icon" href="{% static 'images/Golf_ball.svg.png' %}" type="image/icon type">
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/0fc8d7e1ea.js" crossorigin="anonymous"></script>
   <!-- JQuery -->
@@ -121,7 +121,12 @@
           </ul>
           <!-- Book Now Button-->
           <div class="book-btn">
-            <button type="button" class="book-btn btn btn-outline-success">Book now</button>
+            {% if user.is_authenticated %}
+            <button type="button" class="book-btn btn btn-outline-success"><a href="{% url 'booking' %}">Book
+                now</a></button>
+            {% else %}
+            <h4 class="alert alert-warning" role="alert">You must be signed in to book a class</h4>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -143,7 +148,12 @@
           </ul>
           <!-- Book Now Button-->
           <div class="book-btn">
-            <button type="button" class="book-btn btn btn-outline-success">Book now</button>
+            {% if user.is_authenticated %}
+            <button type="button" class="book-btn btn btn-outline-success"><a href="#">Book
+                now</a></button>
+            {% else %}
+            <h4 class="alert alert-warning" role="alert">You must be signed in to book a class</h4>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -164,7 +174,12 @@
           </ul>
           <!-- Book Now Button-->
           <div class="book-btn">
-            <button type="button" class="book-btn btn btn-outline-success">Book now</button>
+            {% if user.is_authenticated %}
+            <button type="button" class="book-btn btn btn-outline-success"><a href="#">Book
+                now</a></button>
+            {% else %}
+            <h4 class="alert alert-warning" role="alert">You must be signed in to book a class</h4>
+            {% endif %}
           </div>
         </div>
       </div>

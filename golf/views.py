@@ -13,16 +13,31 @@ def main_page(request):
     return render(request, 'golf/index.html')
 
 
-def booking_view(request):
-    """ Order the data by the date closest to the current \
-    date only for dates in the future, not for dates that \
-    have passed
-    """
+def booking(request):
 
-    # Show the current and upcoming dates
-    today = now().date()
-    classes = ClassName.objects.all()
-    booking_list = Booking.objects.filter(booking_date__gte=today).order_by('requested_date')
+    customer_form = CustomerForm(request.POST or None)
+    if customer_form.is_valid():
+        customer_form.save()
+        return HttpResponseRedirect("")
+    context = {
+        "customer_form": customer_form
+    }
+
+    return render(request, 'golf/booking.html', context)
+
+
+def customer(request):
+
+    booking_form = BookingForm(request.POST or None)
+    if booking_form.is_valid():
+        booking_form.save()
+        messages.success(request, "Booking successful")
+        return HttpResponseRedirect("")
+    context = {
+        "booking_form": booking_form
+    }
+
+    return render(request, 'golf/booking.html', context)
 
 
 def get_customer_instance(request, User):
@@ -30,7 +45,7 @@ def get_customer_instance(request, User):
     customer_email = request.user.email
     customer = Customer.objects.filter(email=customer_email).first()
 
-    return 
+    return
 
 
 def check_availabilty(customer_class_name, customer_requested_date):

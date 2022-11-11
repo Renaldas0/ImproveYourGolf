@@ -1,0 +1,46 @@
+{% extends "golf/index.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %} Booking {% endblock %}
+
+
+{% block content %}
+
+{% load static %}
+
+
+<section class="booking_section">
+    <div class="page-header align-items-start min-vh-100">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-8">
+                    <h2 class="text-center mt-2 mb-3">Book a lesson with us at Improve Your Golf</h2>
+                    <h5 class="text-center mt-2 mb-3">Our lessons have a maximum capacity for 10 students.</h5>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-xs-10 col-sm-6 col-md-8 col-lg-6 col-xl-5">
+                    <!-- Display both forms together -->
+                    <form method="POST" class="mb-5 booking-enquiry full-form">
+                        {% csrf_token %}
+
+                        <!-- Customer form -->
+                        {{ customer_form|crispy }}
+
+                        <!-- Booking form -->
+                        {{ booking_form|crispy }}
+
+                        <button type="submit" class="btn btn-primary button mt-4 text-center" type="submit"
+                            value="Submit">Book
+                            Class</button>
+                    </form>
+                    <button type="button" class="btn btn-outline-info">Manage Bookings</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

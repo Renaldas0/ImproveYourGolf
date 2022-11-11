@@ -10,8 +10,8 @@ class Customer(models.Model):
     email = models.EmailField(max_length=254, default="")
 
     def __str__(self):
-        # return the full name as this is easier for the admin to read
-        return self.full_name
+        # return the user name
+        return self.user_name
 
 
 class ClassName(models.Model):
