@@ -150,7 +150,6 @@ h3 {
 /* Coaches Section */
 
 .coaches-container {
-    background-color: #264a1b;
     margin: auto;
     width: 100vw;
     height: 60vh;
@@ -377,4 +376,10 @@ footer {
         font-size: 40px;
         top: 15%;
     }
+}
+
+/* Delete Bookings*/
+
+.delete.bg {
+    padding: 0;
 }

@@ -1,0 +1,12 @@
+{% extends "golf/index.html" %}
+
+{% block content %}
+
+{% load static %}
+<div class="vh-100 delete-bg" style="background-image: url({% static 'images/ball-near-flag.jpg' %});">
+    <h2 class="text-center mt-4">Cancel your booking with us</h2>
+    <h3><a href="{% url 'booking' %}">Make a different booking with us that suits your schedule</a></h3>
+</div>
+
+
+{% endblock %}

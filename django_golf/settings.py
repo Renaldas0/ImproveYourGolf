@@ -63,7 +63,7 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-renaldas0-improveyourgo-s49vroit6cn.ws-eu75.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-renaldas0-improveyourgo-s49vroit6cn.ws-eu74.gitpod.io']
 
 
 MIDDLEWARE = [

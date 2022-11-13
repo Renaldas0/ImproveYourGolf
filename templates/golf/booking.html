@@ -26,15 +26,9 @@
                     <form method="POST" class="mb-5 booking-enquiry full-form">
                         {% csrf_token %}
 
-                        <!-- Customer form -->
-                        {{ customer_form|crispy }}
-
                         <!-- Booking form -->
-                        {{ booking_form|crispy }}
+                        {% crispy form %}
 
-                        <button type="submit" class="btn btn-primary button mt-4 text-center" type="submit"
-                            value="Submit">Book
-                            Class</button>
                     </form>
                     <button type="button" class="btn btn-outline-info">Manage Bookings</button>
                 </div>

@@ -18,6 +18,8 @@
   <link rel="icon" href="{% static 'images/Golf_ball.svg.png' %}" type="image/icon type">
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/0fc8d7e1ea.js" crossorigin="anonymous"></script>
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@1.8.4"></script>
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
     crossorigin="anonymous"></script>
@@ -61,6 +63,9 @@
               <a class="nav-link" href="#contact">Contact Us</a>
             </li>
             {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'delete_booking' %}">Manage Booking</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
             </li>
@@ -110,9 +115,9 @@
         <div class="lesson-text">
           <h3>Short game</h3>
           <ul class="lesson-list">
-            <li><span>Day of the week:</span> Monday</li>
-            <li><span>Lesson Begins:</span> 7pm</li>
-            <li><span>Lesson Ends:</span> 8pm</li>
+            <li><span>Available:</span> Everyday</li>
+            <li><span>Lesson Begins:</span> 5pm</li>
+            <li><span>Lesson Ends:</span> 6pm</li>
             <li><span>Description:</span> In this lesson we will be teaching the fundamentals of the short game aspect
               in
               <strong>Golf</strong>.Short game is definitely the most important part
@@ -137,9 +142,9 @@
         <div class="lesson-text">
           <h3>Kids club</h3>
           <ul class="lesson-list">
-            <li><span>Day of the week:</span> Wednesday</li>
-            <li><span>Lesson Begins:</span> 7pm</li>
-            <li><span>Lesson Ends:</span> 8pm</li>
+            <li><span>Available:</span> Everyday</li>
+            <li><span>Lesson Begins:</span> 6:30pm</li>
+            <li><span>Lesson Ends:</span> 7:30pm</li>
             <li><span>Description:</span> In the Kids Club we welcome all kids from the ages of <strong>5 - 17</strong>.
               This
               class is created to teach children the fundamentals of the golf game,
@@ -164,9 +169,9 @@
         <div class="lesson-text">
           <h3>Long game</h3>
           <ul class="lesson-list">
-            <li><span>Day of the week:</span> Friday</li>
-            <li><span>Lesson Begins:</span> 7pm</li>
-            <li><span>Lesson Ends:</span> 8pm</li>
+            <li><span>Available:</span> Everyday</li>
+            <li><span>Lesson Begins:</span> 8pm</li>
+            <li><span>Lesson Ends:</span> 9pm</li>
             <li><span>Description:</span> In the Long Game class, we aim to teach golfers the ability to control every
               club in the bag ranging from the wedge and working
               all the way up to the driver. Through the use of <strong>Trackman</strong> technology we pinpoint areas in
@@ -188,7 +193,8 @@
 
   <!-- About our coaches-->
   <div id="coaches-section">
-    <div class="container-fluid text-center coaches-container">
+    <div class="container-fluid text-center coaches-container"
+      style="background-image: url({% static 'images/coach-container-img.jpg' %});">
       <div class="row coach-row">
         <div class="col coach-col">
           <img src="{% static 'images/coach-1.jpg' %}" alt="Picture of our coach" class="coach-1">
