@@ -6,11 +6,15 @@
 {% load account socialaccount %}
 
 {% block content %}
-<div class="page-header align-items-start min-vh-100" loading="lazy">
+<section class="Form my-4 mx-5">
   <div class="container">
-    <div class="row">
-      <div class="col-md-8 mt-3 offset-md-2">
-        <h2>{% trans "Sign Out" %}</h2>
+    <div class="row login-row g-0">
+      <div class="col-lg-5">
+        <img src="{% static 'images/login.jpg' %}" alt="golf ball being teed up" class="img-fluid login-img">
+      </div>
+
+      <div class="col-lg-7 px-5 pt-5">
+        <h3 class="font-weight-bold py-3">{% trans "Sign Out" %}</h3>
 
         <p>{% trans 'Are you sure you want to sign out?' %}</p>
 
@@ -24,6 +28,6 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
 
-{% endblock %}
+  {% endblock %}

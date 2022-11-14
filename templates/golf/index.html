@@ -154,7 +154,7 @@
           <!-- Book Now Button-->
           <div class="book-btn">
             {% if user.is_authenticated %}
-            <button type="button" class="book-btn btn btn-outline-success"><a href="#">Book
+            <button type="button" class="book-btn btn btn-outline-success"><a href="{% url 'booking' %}">Book
                 now</a></button>
             {% else %}
             <h4 class="alert alert-warning" role="alert">You must be signed in to book a class</h4>
@@ -180,7 +180,7 @@
           <!-- Book Now Button-->
           <div class="book-btn">
             {% if user.is_authenticated %}
-            <button type="button" class="book-btn btn btn-outline-success"><a href="#">Book
+            <button type="button" class="book-btn btn btn-outline-success"><a href="{% url 'booking' %}">Book
                 now</a></button>
             {% else %}
             <h4 class="alert alert-warning" role="alert">You must be signed in to book a class</h4>
@@ -238,7 +238,7 @@
         Contact Us Here: 088 188 8898
       </li>
       <li>
-        Available: Monday - Friday between 9am - 9pm
+        Available: Monday - Sunday between 9am - 9pm
       </li>
     </ul>
   </div>

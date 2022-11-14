@@ -3,10 +3,15 @@
 {% block content %}
 
 {% load static %}
-<div class="vh-100 delete-bg" style="background-image: url({% static 'images/ball-near-flag.jpg' %});">
-    <h2 class="text-center mt-4">Cancel your booking with us</h2>
-    <h3><a href="{% url 'booking' %}">Make a different booking with us that suits your schedule</a></h3>
+<div class="page-header align-items-start min-vh-100"
+    style="background-image: url({% static 'images/manage-booking.jpg' %});">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 text-center mb-3">
+                <h2 class="text-center mt-4">Cancel your booking with us</h2>
+                <h3><a href="{% url 'booking' %}">Make a different booking with us that suits your schedule</a></h3>
+            </div>
+        </div>
+    </div>
 </div>
-
-
 {% endblock %}
