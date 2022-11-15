@@ -17,18 +17,21 @@
                 <div class="col-sm-8">
                     <h2 class="text-center mt-2 mb-3">Book a lesson with us at Improve Your Golf</h2>
                     <h5 class="text-center mt-2 mb-3">Our lessons have a maximum capacity for 10 students.</h5>
+                    <hr>
                 </div>
             </div>
 
             <div class="row d-flex justify-content-center">
                 <div class="col-xs-10 col-sm-6 col-md-8 col-lg-6 col-xl-5">
                     <!-- Display both forms together -->
-                    <form method="POST" class="mb-5 booking-enquiry full-form">
+                    <form method="POST" class="mb-5 booking-enquiry full-form" action="{% url 'booking' %}"
+                        enctype="multipart/form-data">
                         {% csrf_token %}
 
                         <!-- Booking form -->
                         {% crispy form %}
-
+                        <button type="submit" class="btn btn-outline-success btn-lg">Submit</button>
+                        <hr>
                     </form>
                     <button type="button" class="btn btn-outline-info"><a href="{% url 'delete_booking' %}">Manage
                             Bookings</a></button>

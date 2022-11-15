@@ -9,6 +9,23 @@ window.addEventListener('scroll', () => {
     }
 })
 
+function datePicker() {
+    $("#id_requested_date").datepicker({
+        dateFormat: 'dd/mm/yy'
+    });
+}
+
+// Remove disabled attribute so that the form can be submitted without throwing errors
+function removeDisableAttrOnSubmit() {
+    $("#customer-details-form").one('submit', (function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        $("#customer-details-form>.full-form>#div_id_email>.controls>.emailinput").attr("disabled", false);
+        $this.submit();
+    }));
+}
+
+
 // Opens the modal on delete_booking
 function deleteModal() {
     $("#delete-booking").on('click', function () {
@@ -19,29 +36,3 @@ function deleteModal() {
         $('#confirmationModal').modal('hide');
     });
 }
-
-// The debounce function is added to make sure
-//a given task doesn't fire so often that it 
-// breaks the browser performance
-function debounce(func, wait, immediate) {
-    var timeout;
-    return function () {
-        var context = this,
-            args = arguments;
-        var later = function () {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-        };
-        var callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-    };
-}
-
-// Call all functions 
-$(document).ready(function () {
-
-    deleteModal();
-
-});

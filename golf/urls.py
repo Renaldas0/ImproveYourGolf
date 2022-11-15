@@ -4,7 +4,6 @@ from golf import views
 
 
 urlpatterns = [
-    path('', views.BookingEnquiry.as_view(), name='booking'),
     path('manage_booking', views.ManageBooking.as_view(),
          name='manage_booking'),
     path('delete_booking/<booking_id>',

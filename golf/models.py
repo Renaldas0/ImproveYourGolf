@@ -4,7 +4,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 # Create your models here.
 class Customer(models.Model):
-    """ Customer information model """
+    """ Model for holding customer information """
     customer_id = models.AutoField(primary_key=True)
     full_name = models.CharField(max_length=50)
     email = models.EmailField(max_length=254, default="")
@@ -15,7 +15,7 @@ class Customer(models.Model):
 
 
 class ClassName(models.Model):
-    """ Class Type Model """
+    """ Model for Class names """
 
     CLASS_CHOICES = (('Short_game', 'Short_game'),
                      ('Kids_club', 'Kids_club'),
