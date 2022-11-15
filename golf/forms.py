@@ -23,7 +23,11 @@ class BookingForm(forms.Form):
         (3, 'Long game'),
     )
 
-    name = forms.CharField(widget=forms.TextInput(attrs={
+    first_name = forms.CharField(widget=forms.TextInput(attrs={
+        'hx-get': reverse_lazy('booking'),
+        'hx-trigger': 'keyup'
+    }))
+    last_name = forms.CharField(widget=forms.TextInput(attrs={
         'hx-get': reverse_lazy('booking'),
         'hx-trigger': 'keyup'
     }))

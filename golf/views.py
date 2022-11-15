@@ -19,3 +19,23 @@ def booking(request):
 
 def delete_booking(request):
     return render(request, 'golf/delete_booking.html')
+
+
+def get_customer_instance(request, User):
+    """ Returns customer instance if User is logged in """
+    customer_email = request.user.email
+    customer = Customer.objects.filter(email=customer_email).first()
+
+    return customer
+
+
+def check_availabilty(customer_class_name, customer_requested_date):
+    """ Check availability against Booking model using customer input """
+
+    # Check to see how many classes exist at that date
+    classes_booked = len(Booking.objects.filter(
+        class_name=customer_class_name,
+        requested_date=customer_requested_date, status="Available"))
+
+    # Return number of classes
+    return classes_booked

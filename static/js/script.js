@@ -1,3 +1,4 @@
+// Navbar class gets applied
 const nav = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
@@ -7,26 +8,6 @@ window.addEventListener('scroll', () => {
         nav.classList.remove('scrolled');
     }
 })
-
-function datePicker() {
-    $("#id_requested_date").datepicker({
-        dateFormat: 'dd/mm/yy'
-    });
-}
-
-// Stops user from selecting a date in the past
-function checkDate() {
-    $(".booking-enquiry").one('submit', (function (e) {
-        e.preventDefault();
-        var $this = $(this);
-        var selectedDate = $('#id_requested_date').datepicker('getDate');
-        if ((selectedDate.getTime() < Date.now())) {
-            alert("Selected date is in the past, please choose a date in the future.");
-        } else {
-            $this.submit();
-        }
-    }));
-}
 
 // Opens the modal on delete_booking
 function deleteModal() {
@@ -39,7 +20,7 @@ function deleteModal() {
     });
 }
 
-// The debounce function is edded to make sure
+// The debounce function is added to make sure
 //a given task doesn't fire so often that it 
 // breaks the browser performance
 function debounce(func, wait, immediate) {
@@ -61,10 +42,6 @@ function debounce(func, wait, immediate) {
 // Call all functions 
 $(document).ready(function () {
 
-    datePicker();
-
     deleteModal();
-
-    checkDate();
 
 });
