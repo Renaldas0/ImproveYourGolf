@@ -49,12 +49,14 @@
 - **Coaches**
   - The coaches section consists of 2 images that show the coaches and a brief description
   - The responsive feature also changes the layout for these 2 divs, making them fall one under the other for smaller devices
+![coach-screenshot](https://user-images.githubusercontent.com/97538312/202302482-35e26dd9-6f8f-4402-9230-0fded587fbc0.jpg)
 
-{Coaches section screenshot}
+
 
 - **Register & Login Forms**
   - When the register or login option is selected by the user, they are redirected to the form page.
   - These forms are of very simplistic design for easy and satisfying user experience.
   - Both forms are designed to look the same and contain the same navbar and footer elements as on the main page.
+## Sign in form
+![sign-in-screenshot](https://user-images.githubusercontent.com/97538312/202302531-b3fa0508-89ad-47df-8140-16c6126b0bef.jpg)
 
-{both form images}
