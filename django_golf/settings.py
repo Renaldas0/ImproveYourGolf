@@ -66,7 +66,8 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-renaldas0-improveyourgo-s49vroit6cn.ws-eu75.gitpod.io', 'https://8000-renaldas0-improveyourgo-s49vroit6cn.ws-eu74.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-renaldas0-improveyourgo-s49vroit6cn.ws-eu75.gitpod.io',
+                        'https://8000-renaldas0-improveyourgo-s49vroit6cn.ws-eu74.gitpod.io']
 
 
 MIDDLEWARE = [
@@ -105,10 +106,10 @@ WSGI_APPLICATION = 'django_golf.wsgi.application'
 
 DATABASES = {
     'default': {
-         'ENGINE': 'django.db.backends.sqlite3',
-         'NAME': BASE_DIR / 'db.sqlite3',
-     }
- }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))

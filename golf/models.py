@@ -1,59 +1,50 @@
 from django.db import models
+from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 # Create your models here.
-class Customer(models.Model):
-    """ Model for holding customer information """
-    customer_id = models.AutoField(primary_key=True)
-    full_name = models.CharField(max_length=50)
-    email = models.EmailField(max_length=254, default="")
 
-    def __str__(self):
-        # return the full name as this is easier for the admin to read
-        return self.full_name
+CLASS_CHOICES = (('Short_game', 'Short_game'),
+                 ('Kids_club', 'Kids_club'),
+                 ('Long_game', 'Long_game'))
+
+
+CLASS_STATUS = (('Fully_Booked', 'Fully_Booked'),
+                ('Available', 'Available'))
 
 
 class ClassName(models.Model):
-    """ Model for Class names """
 
-    CLASS_CHOICES = (('Short_game', 'Short_game'),
-                     ('Kids_club', 'Kids_club'),
-                     ('Long_game', 'Long_game'))
-
-    classes = models.CharField(
+    class_name = models.CharField(
         max_length=15, choices=CLASS_CHOICES, primary_key=True)
 
     def __str__(self):
-        return str(self.classes)
+        return str(self.class_name)
+
+
+class Customer(models.Model):
+    customer_id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50, blank=False)
+    email = models.EmailField(max_length=100, default='')
+
+    def __str__(self):
+        return self.name
 
 
 class Booking(models.Model):
-    """ Booking Class Model """
-
-    STATUS_CHOICES = (('Fully_Booked', 'Fully_Booked'),
-                      ('Availble', 'Availble'))
-
-    OPTION_STATUS = (('y', 'Yes'), ('n', 'No'), ('p', 'Pending'))
-
-    class Meta:
-        """Booking Meta"""
-        verbose_name_plural = 'Bookings'
-
     booking_id = models.AutoField(primary_key=True)
     customer = models.ForeignKey(
-        Customer, on_delete=models.CASCADE, related_name="customer", null=True)
+        Customer, on_delete=models.CASCADE, default=True)
     class_name = models.ForeignKey(
         'ClassName', on_delete=models.CASCADE, default=True)
     status = models.CharField(
-        max_length=15, choices=STATUS_CHOICES, default='Available')
-    seats = models.IntegerField(default=True, null=False, validators=[
-            MaxValueValidator(10),
-            MinValueValidator(1)
-        ])
-    requested_date = models.DateField()
-    bookingtatus = models.CharField(
-        max_length=10, default='p', choices=OPTION_STATUS)
+        max_length=15, choices=CLASS_STATUS, default='Available')
+    places = models.IntegerField(default=True, null=False, validators=[
+        MaxValueValidator(10),
+        MinValueValidator(1)
+    ])
 
     def __str__(self):
         return str(self.class_name)
