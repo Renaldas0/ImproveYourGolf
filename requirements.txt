@@ -18,6 +18,7 @@ heroku==0.1.4
 oauthlib==3.2.2
 psycopg2==2.9.4
 PyJWT==2.6.0
+pyproject-toml==0.0.10
 python-dateutil==1.5
 python3-openid==3.2.0
 pytz==2022.4
