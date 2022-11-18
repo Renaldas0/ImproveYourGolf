@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+{% load static %}
+<div class="page-header align-items-start min-vh-100"
+    style="background-image: url({% static 'images/bike_pink.jpg' %});" loading="lazy">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-8">
+                <h2 class="text-center mt-2 mb-3">Edit your booking with <span class="brand">Lady<span
+                            class="fuxia-lady"><span class="fuxia-thin">|Bike</span></span></span></h2>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <!-- Display Booking ID -->
+                <h5 class="text-center my-3">Booking ID: {{ booking.booking_id }}</h5>
+                <!-- Booking form -->
+                <form method="POST" class="mb-5 booking-enquiry full-form">
+
+                    {% csrf_token %}
+                    {{ booking_form | crispy }}
+
+                    <button type="submit" class="edit-booking-button button mt-4 text-center submit-button">
+                        Edit Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

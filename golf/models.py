@@ -1,6 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
-from cloudinary.models import CloudinaryField
+from django import forms
 from django.core.validators import MinValueValidator, MaxValueValidator
 
 
@@ -34,6 +33,10 @@ class Customer(models.Model):
 
 
 class Booking(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Bookings'
+
     booking_id = models.AutoField(primary_key=True)
     customer = models.ForeignKey(
         Customer, on_delete=models.CASCADE, default=True)
@@ -45,6 +48,7 @@ class Booking(models.Model):
         MaxValueValidator(10),
         MinValueValidator(1)
     ])
+    requested_date = models.DateField()
 
     def __str__(self):
         return str(self.class_name)

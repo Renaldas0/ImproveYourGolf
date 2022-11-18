@@ -1,4 +1,4 @@
-{% extends "golf/index.html" %}
+{% extends "index.html" %}
 
 {% block title %} Booking {% endblock %}
 
@@ -30,7 +30,7 @@
 
                         <button type="submit" class="btn btn-outline-success btn-lg">Submit</button>
                     </form>
-                    <button type="button" class="btn btn-outline-info"><a href="#">Manage
+                    <button type="button" class="btn btn-outline-info"><a href="{% url 'manage_booking' %}">Manage
                             Bookings</a></button>
                 </div>
             </div>
