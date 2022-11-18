@@ -1,4 +1,5 @@
 from pathlib import Path
+import mimetypes
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
@@ -24,6 +25,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['improve-your-golf.herokuapp.com', 'localhost']
 
+mimetypes.add_type("text/css", ".css", True)
 
 # Application definition
 
