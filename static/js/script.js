@@ -9,6 +9,26 @@ window.addEventListener('scroll', () => {
     }
 })
 
+function datePicker() {
+    $("#id_requested_date").datepicker({
+        dateFormat: 'dd/mm/yy'
+    });
+}
+
+// Prevents dates in the past from being submitted on the booking form
+function checkDate() {
+    $(".booking-enquiry").one('submit', (function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        var selectedDate = $('#id_requested_date').datepicker('getDate');
+        if ((selectedDate.getTime() < Date.now())) {
+            alert("Selected date is in the past, please choose a date in the future.");
+        } else {
+            $this.submit();
+        }
+    }));
+}
+
 // Remove disabled attribute so that the form can be submitted without throwing errors
 function removeDisableAttrOnSubmit() {
     $("#customer-details-form").one('submit', (function (e) {
@@ -31,9 +51,33 @@ function deleteModal() {
     });
 }
 
+// The debounce function is eadded to ensure a 
+//given task doesn't fire so often that it 
+// bricks browser performance
+function debounce(func, wait, immediate) {
+    var timeout;
+    return function () {
+        var context = this,
+            args = arguments;
+        var later = function () {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+}
+
+// Call all functions 
 $(document).ready(function () {
 
+    datePicker();
+
     deleteModal();
+
+    checkDate();
 
     removeDisableAttrOnSubmit();
 });

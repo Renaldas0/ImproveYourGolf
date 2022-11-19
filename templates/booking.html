@@ -24,9 +24,9 @@
                     <!-- Display both forms together -->
                     <form method="POST" class="mb-5 booking-enquiry full-form" action="{% url 'booking' %}">
                         <!-- Booking form -->
+                        {% csrf_token %}
                         {{ customer_form | crispy }}
                         {{ booking_form | crispy}}
-                        {% csrf_token %}
 
                         <button type="submit" class="btn btn-outline-success btn-lg">Submit</button>
                     </form>

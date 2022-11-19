@@ -307,6 +307,12 @@ footer {
     }
 }
 
+@media screen and (max-width:991px) {
+    .login-img {
+        display: none;
+    }
+}
+
 @media screen and (max-width:845px) {
     .mid-text {
         font-size: 35px;

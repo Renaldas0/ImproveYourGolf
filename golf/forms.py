@@ -1,11 +1,11 @@
 """Imports"""
-from datetime import datetime
+from datetime import date
 from django import forms
-from django.forms import ModelForm
+from django.forms import ModelForm, DateField, widgets
 from django.conf import settings
 from .models import Customer, Booking
 
-today = datetime.today
+today = date.today()
 
 
 class CustomerForm(forms.ModelForm):
@@ -17,8 +17,7 @@ class CustomerForm(forms.ModelForm):
 
 
 class BookingForm(forms.ModelForm):
-    requested_date = forms.DateField(widget=forms.DateInput(
-        attrs={'type': 'date', 'min': datetime.now().date()}))
+    requested_date = forms.DateField(input_formats=settings.DATE_INPUT_FORMAT)
 
     class Meta:
         model = Booking

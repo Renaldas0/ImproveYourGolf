@@ -14,6 +14,9 @@ CLASS_STATUS = (('Fully_Booked', 'Fully_Booked'),
                 ('Available', 'Available'))
 
 
+OPTION_STATUS = (('y', 'Yes'), ('n', 'No'), ('p', 'Pending'))
+
+
 class ClassName(models.Model):
 
     class_name = models.CharField(
@@ -49,6 +52,8 @@ class Booking(models.Model):
         MinValueValidator(1)
     ])
     requested_date = models.DateField()
+    bookingtatus = models.CharField(
+        max_length=10, default='p', choices=OPTION_STATUS)
 
     def __str__(self):
         return str(self.class_name)

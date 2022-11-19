@@ -23,6 +23,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 ALLOWED_HOSTS = ['improve-your-golf.herokuapp.com', 'localhost']
 
 mimetypes.add_type("text/css", ".css", True)
@@ -153,8 +155,6 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
-DATE_INPUT_FORMATS = ('%d-%m-%Y', '%Y-%m-%d')
-
 USE_I18N = True
 
 USE_L10N = True
@@ -163,7 +163,7 @@ USE_TZ = True
 
 # Date formatting
 
-DATE_INPUT_FORMATS = ('%d-%m-%Y', '%Y-%m-%d')
+DATE_INPUT_FORMAT = ['%d/%m/%Y', ]
 
 en_formats.DATE_FORMAT = 'd/m/Y'
 

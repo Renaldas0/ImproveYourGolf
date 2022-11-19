@@ -1,6 +1,10 @@
 import datetime
 from .models import Customer, ClassName, Booking
 from django.shortcuts import render, reverse, get_object_or_404
+from django.conf import settings
+from django.templatetags.static import static
+from django.contrib.staticfiles.storage import staticfiles_storage
+from django.contrib.staticfiles.finders import find
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
@@ -13,6 +17,13 @@ classes_total = ClassName.objects.filter(booking__status='Available').count()
 booking_places = Booking.objects.values('places').count()
 
 classes_left = classes_total - booking_places
+
+
+def get_static(path):
+    if settings.DEBUG:
+        return find(path)
+    else:
+        return static(path)
 
 
 # Renders the view of the home page
