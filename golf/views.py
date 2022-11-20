@@ -31,6 +31,18 @@ def main_page(request):
     return render(request, 'index.html')
 
 
+def sign_up(request):
+    """Sign Up"""
+    if request.method == "POST":
+        form = Customer(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, 'index.html')
+    else:
+        form = Customer()
+        return render(request, 'signup.html', {'form': form})
+
+
 def booking_view(request):
     """ Order the data by the date closest to the current \
     date only for dates in the future, not for dates that \
