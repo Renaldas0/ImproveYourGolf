@@ -336,6 +336,10 @@ footer {
     .about-text {
         top: 20%;
     }
+
+    .login-row {
+        margin-top: 20%;
+    }
 }
 
 @media screen and (max-width:695px) {
@@ -363,6 +367,10 @@ footer {
 
     .class-col {
         width: 70vw;
+    }
+
+    .login-row {
+        margin-top: 25%;
     }
 }
 

@@ -9,11 +9,13 @@ window.addEventListener('scroll', () => {
     }
 })
 
+
 function datePicker() {
     $("#id_requested_date").datepicker({
         dateFormat: 'dd/mm/yy'
     });
 }
+
 
 // Prevents dates in the past from being submitted on the booking form
 function checkDate() {
