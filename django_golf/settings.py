@@ -86,7 +86,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # To resolve CSRF Token issues
 CSRF_TRUSTED_ORIGINS = ['https://8000-renaldas0-improveyourgo-s49vroit6cn.ws-eu75.gitpod.io',
-                        'https://8000-renaldas0-improveyourgo-s49vroit6cn.ws-eu74.gitpod.io']
+                        'https://8000-renaldas0-improveyourgo-s49vroit6cn.ws-eu74.gitpod.io', 'https://8000-renaldas0-improveyourgo-s49vroit6cn.ws-eu77.gitpod.io']
 
 
 MIDDLEWARE = [

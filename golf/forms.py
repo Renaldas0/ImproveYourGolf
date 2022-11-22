@@ -1,7 +1,6 @@
 """Imports"""
 from datetime import date
 from django import forms
-from django.forms import ModelForm, DateField, widgets
 from django.conf import settings
 from .models import Customer, Booking
 
