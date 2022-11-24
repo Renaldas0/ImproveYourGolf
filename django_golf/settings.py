@@ -18,7 +18,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
@@ -171,7 +171,7 @@ USE_TZ = True
 
 DATE_INPUT_FORMAT = ['%d/%m/%Y', ]
 
-en_formats.DATE_FORMAT = 'd/m/Y'
+en_formats.DATE_FORMAT = 'd/m/y'
 
 en_formats.DATETIME_FORMAT = 'd/m/Y'
 
