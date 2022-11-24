@@ -42,9 +42,9 @@ class Booking(models.Model):
 
     booking_id = models.AutoField(primary_key=True)
     customer = models.ForeignKey(
-        Customer, on_delete=models.CASCADE, default=True)
+        Customer, on_delete=models.CASCADE)
     class_name = models.ForeignKey(
-        'ClassName', on_delete=models.CASCADE, default=True)
+        ClassName, on_delete=models.CASCADE)
     status = models.CharField(
         max_length=15, choices=CLASS_STATUS, default='Available')
     places = models.IntegerField(default=True, null=False, validators=[

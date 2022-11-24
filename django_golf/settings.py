@@ -169,7 +169,7 @@ USE_TZ = True
 
 # Date formatting
 
-DATE_INPUT_FORMAT = ['%d/%M/%Y', ]
+DATE_INPUT_FORMAT = ['%d/%m/%Y', ]
 
 en_formats.DATE_FORMAT = 'd/m/Y'
 

@@ -27,10 +27,13 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
-  <!-- JQuery for datepicker -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <!-- Personal JS -->
+  <script src="{% static 'js/script.js' %}"></script>
+  <!-- Fengyuan Chen's Datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css"
+    integrity="sha256-b88RdwbRJEzRx95nCuuva+hO5ExvXXnpX+78h8DjyOE=" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js"
+    integrity="sha256-/7FLTdzP6CfC1VBAj/rsp3Rinuuu9leMRGd354hvk0k=" crossorigin="anonymous"></script>
 
   <title>Improve Your Golf</title>
 </head>
@@ -278,9 +281,13 @@
       let alert = new bootstrap.Alert(messages);
       alert.close();
     }, 3000);
+
+    $(function () {
+      $("#id_date").datepicker({
+        format: 'dd/mm/yyyy',
+      });
+    });
   </script>
-  <!-- My own JS -->
-  <script src="{% static 'js/script.js' %}"></script>
 </body>
 
 </html>

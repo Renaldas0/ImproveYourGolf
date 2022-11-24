@@ -22,7 +22,8 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-xs-10 col-sm-6 col-md-8 col-lg-6 col-xl-5">
                     <!-- Display both forms together -->
-                    <form method="POST" class="mb-5 booking-enquiry full-form" action="{% url 'booking' %}">
+                    <form method="POST" class="mb-5 booking-enquiry full-form" action="{% url 'booking' %}"
+                        autocomplete="off">
                         <!-- Booking form -->
                         {% csrf_token %}
                         {{ customer_form | crispy }}
