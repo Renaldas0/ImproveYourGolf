@@ -1,14 +1,8 @@
-// Navbar class gets applied
-const nav = document.querySelector('nav');
-
-window.addEventListener('scroll', () => {
-    if ((window.scrollY >= 50)) {
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
-    }
-})
-
+function datePicker() {
+    $("#id_requested_date").datepicker({
+        dateFormat: 'dd/mm/yy'
+    });
+}
 
 // Prevents dates in the past from being submitted on the booking form
 function checkDate() {

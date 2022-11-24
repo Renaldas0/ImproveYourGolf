@@ -16,8 +16,7 @@ class CustomerForm(forms.ModelForm):
 
 
 class BookingForm(forms.ModelForm):
-    requested_date = forms.DateField(widget=forms.TextInput(
-        attrs={'min': today, 'value': today, 'type': 'date'}), required=True)
+    requested_date = forms.DateField(input_formats=settings.DATE_INPUT_FORMAT)
 
     class Meta:
         model = Booking

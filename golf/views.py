@@ -116,7 +116,7 @@ class BookingEnquiry(View):
 
             # Convert date in to format required by django
             date_formatted = datetime.datetime.strptime(
-                customer_requested_date, "%d/%m/%Y").strftime('%Y-%m-%d')
+                customer_requested_date, "%d/%m/%Y").strftime('%Y/%m/%d')
 
             # Check to see how many bookings exist at that date
             classes_booked = check_availabilty(
