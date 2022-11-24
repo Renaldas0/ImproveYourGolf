@@ -75,7 +75,31 @@
   - I encountered a bug with the bookings when selecting a date
   - The date selected on a calendar was coming up as an invalid date and when debugging it was shown as an incorrect format
   - The format was coming up as 'yyyy-mm-dd' even though I specified to record it as '%d-%m-%Y' in my views.py file
+  - Backports.zoneinfo was shown as an error when deploying to Heroku
+  - I fixed this by specifying an older python version in a runtime.txt file
+  - My csrf token was getting rejected so I addressed this by specifying a trusted url in my settings.py file
 
 ## Unfixed Bugs 
   -
+  
+## Testing 
+- For the testing process I used print statements and kept running the code after a new function was added which was noticeable when run
+- I wrote code for the urls, models and views in tests.py
+- Verified the HTML using the W3C HTML validator and all tests passed
+- Verified CSS using the Jigsaw w3 css validator to confirm all css is valid
+- Tested the python code by running it through PEP8 online :  http://pep8online.com/
+- The only errors were to indicate that the line is too long
+- 
+## Deployment 
+  - I deployed the project to heroku which is a cloud based hosting platform https://www.heroku.com/
+  - The database is deployed using ElephantSQL 
+  - This is done by creating a new instance on ElephantSQL 
+  - Select Table quries in BROWSER and select an option that looks familiar
+  - The DATABASE URL is then pasted into heroku config vars and into my env.py file 
+  - The code is deployed and pushed to Github which is linked to heroku
 
+## Credits
+  - I traced back to the I think therefore I blog project to set up my python files correctly
+  - Errors during the build process were fixed with the help of slack community and stackoverflow
+  - These helped me find a solution to my backports.zoneinfo issues and csrf token issues.
+  
