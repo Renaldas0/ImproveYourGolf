@@ -2,7 +2,8 @@
 
 ### [Improve Your Golf](https://www.example.com) is a full stack website developed to be a website that takes bookings for golf lessons. The user must create an account to be able to make bookings for classes, then be able to change or delete their placed booking.
 
-{responsinator image placed here }
+![responsive](https://user-images.githubusercontent.com/97538312/203823455-a1f9d1d8-3687-4b54-a6a1-2b5d1a8e8026.jpg)
+
 
 ## **Features**
 
@@ -59,4 +60,22 @@
   - Both forms are designed to look the same and contain the same navbar and footer elements as on the main page.
 ## Sign in form
 ![sign-in-screenshot](https://user-images.githubusercontent.com/97538312/202302531-b3fa0508-89ad-47df-8140-16c6126b0bef.jpg)
+
+## Booking
+  - The booking page consists of a form which is made using crispy forms
+  - The user must input their name, email, requested class and requested date
+  - Once this is done if the fields are correct the form is recorded in the database
+![booking-page](https://user-images.githubusercontent.com/97538312/203824345-9ed984e1-9236-43f5-b7b9-35d97e2bd7ae.jpg)
+
+## Manage Bookings
+  - Users can see their made bookings in the manage bookings section
+  - If no bookings are reorded by the user, they are redirected to the booking page
+
+## Bugs encountered
+  - I encountered a bug with the bookings when selecting a date
+  - The date selected on a calendar was coming up as an invalid date and when debugging it was shown as an incorrect format
+  - The format was coming up as 'yyyy-mm-dd' even though I specified to record it as '%d-%m-%Y' in my views.py file
+
+## Unfixed Bugs 
+  -
 
