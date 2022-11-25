@@ -14,7 +14,7 @@
 
 | id  |  Content | How was it satisfied
 | ------ | ------ | ------ |
-|  [#1](https://github.com/Renaldas0/ImproveYourGolfissues/1) | As a site user I can view the layout of the website so that everything is easy to find on the page and I know what it is about. |
+|  [#1](https://github.com/Renaldas0/ImproveYourGolfissues/1) | As a site user I can view the layout of the website so that everything is easy to find on the page and I know what it is about. | Webpage |
 |  [#2](https://github.com/Renaldas0/ImproveYourGolfissues/2) | As a site user I can use the navbar so that I can easily navigate through the website with the navbar. | Webpage |
 |  [#3](https://github.com/Renaldas0/ImproveYourGolfissues/3) | As a site user I can see the footer clearly so that I can see any social media links clearly incase I wish to follow up there. | Webpage |
 |  [#4](https://github.com/Renaldas0/ImproveYourGolfissues/4) | As a site user I can read about classes so that I can get information about each class offered. | Class Information |
