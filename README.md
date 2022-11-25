@@ -15,10 +15,11 @@
   - The layout of certain sections changes, dpending if a user is logged in or not.
 
 - **Admin Features**
-  - As an admin I have the ability to login 
+  - As an admin only I have the ability to login to the admin panel
   - Admin is able to see all placed reservations and control them
+  - Admin is able to see all customer input details
   - Admin can see who placed the reservations by their login details
-  - Most importantly the admin can update or delete any reservations
+  - Most importantly the admin can update or delete all reservations
 
 - **Site Features**
   - The site is developed to be a single scroll page except for the register and login forms
@@ -89,7 +90,9 @@
 - Verified CSS using the Jigsaw w3 css validator to confirm all css is valid
 - Tested the python code by running it through PEP8 online :  http://pep8online.com/
 - The only errors were to indicate that the line is too long
-- 
+- I manually tested that errors in the form fields show up
+- Tested that messages get displayed when Logging in, making a booking, editing bookings, deleting bookings and signing out.
+
 ## Deployment 
   - I deployed the project to heroku which is a cloud based hosting platform https://www.heroku.com/
   - The database is deployed using ElephantSQL 
