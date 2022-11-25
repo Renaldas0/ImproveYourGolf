@@ -1,10 +1,44 @@
 # Improve Your Golf
 
-### [Improve Your Golf](https://www.example.com) is a full stack website developed to be a website that takes bookings for golf lessons. The user must create an account to be able to make bookings for classes, then be able to change or delete their placed booking.
+### [Improve Your Golf](https://www.example.com) is a full stack website developed to be a website that takes bookings for golf lessons. The user must create an account to be able to make bookings for classes, then they are able to change or delete their placed bookings.
 
 ![responsive](https://user-images.githubusercontent.com/97538312/203823455-a1f9d1d8-3687-4b54-a6a1-2b5d1a8e8026.jpg)
+  
+##  **Purpose**
+  - The purpose of this website is to provide information about our studio and encourage golfers of all age groups to try out our lessons that will improve their golf.
 
 
+## User Stories
+
+### User Stories that have been achieved for this deadline in this project:
+
+| id  |  Content | How was it satisfied
+| ------ | ------ | ------ |
+|  [#1](https://github.com/Renaldas0/ImproveYourGolfissues/1) | As a site user I can view the layout of the website so that everything is easy to find on the page and I know what it is about. |
+|  [#2](https://github.com/Renaldas0/ImproveYourGolfissues/2) | As a site user I can use the navbar so that I can easily navigate through the website with the navbar. | Webpage |
+|  [#3](https://github.com/Renaldas0/ImproveYourGolfissues/3) | As a site user I can see the footer clearly so that I can see any social media links clearly incase I wish to follow up there. | Webpage |
+|  [#4](https://github.com/Renaldas0/ImproveYourGolfissues/4) | As a site user I can read about classes so that I can get information about each class offered. | Class Information |
+|  [#5](https://github.com/Renaldas0/ImproveYourGolfissues/5)| As a site user I can read about the scheduled classes so that I know which class is the best to book according to my schedule. | Class Information |
+|  [#6](https://github.com/Renaldas0/ImproveYourGolfissues/6) | As a site user I can check the availability of classes so that I know if the class i'm interested in is available. | Booking |
+|  [#7](https://github.com/Renaldas0/ImproveYourGolfissues/7) | As a site user I can book a class to my schedule so that I can get a reserved place for a lesson. | Booking |
+|  [#8](https://github.com/Renaldas0/ImproveYourGolfissues/8)| As a site user I can cancel my booking so that my place is not reserved in case I can't make it to the class. | Manage Booking |
+|  [#9](https://github.com/Renaldas0/ImproveYourGolfissues/9) |As a site user I can login to my account so that my details are saved and I can place a booking faster. |  Login/SignUp |
+|  [#11](https://github.com/Renaldas0/ImproveYourGolfissues/11) | As a site user I can contact a teacher so that I can ask questions regarding these lessons. |  Webpage |
+|  [#12](https://github.com/Renaldas0/ImproveYourGolfissues/12) | As a site admin I can add social media platforms so that students can follow us on other platforms to better understand our goals. | Webpage |
+|  [#13](https://github.com/Renaldas0/ImproveYourGolfissues/13) | As a site admin I can edit classes so that I can adjust bookings personally if requested by a user. |  Admin |
+|  [#14](https://github.com/Renaldas0/ImproveYourGolfissues/14) | As a site user I can block off bookings so that the class isn't overbooked | Admin |
+|  [#15](https://github.com/Renaldas0/ImproveYourGolfissues/15)| As a site admin I can approve a booking so that I can control how many people book for the class and see who places the booking. | Admin |
+|  [#17](https://github.com/Renaldas0/ImproveYourGolfissues/15)| Develop the website to be responsive and look aesthetic on all devices. | Webpage |
+
+### User stories that are planned for next deployment
+
+| id  |  Content | 
+| ------ | ------ |
+|  [#10](https://github.com/Renaldas0/ImproveYourGolfissues/10) | As a site admin I can have past students post their review so that any upcoming students can see if this class is effective. |
+|  [#18](https://github.com/Renaldas0/ImproveYourGolfissues/18) | As a user I can change my password incase I have forgotten my password or feel it has been discovered by someone else|
+|  [#19](https://github.com/Renaldas0/ImproveYourGolfissues/19) | Style the error pages such as the 404, 403, 500 pages so they look a little more appealing to cancel out the inconvenience a touch.|
+
+---
 ## **Features**
 
 - **User Features** 
@@ -13,6 +47,7 @@
   - Ability for users to place bookings for their desired class
   - Ability for users to change or cancel their bookings
   - The layout of certain sections changes, dpending if a user is logged in or not.
+  - Fully responsive design using bootstrap and media queries for user on all devices.
 
 - **Admin Features**
   - As an admin only I have the ability to login to the admin panel
