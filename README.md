@@ -7,6 +7,8 @@
 ##  **Purpose**
   - The purpose of this website is to provide information about our studio and encourage golfers of all age groups to try out our lessons that will improve their golf.
 
+## Agile Methodology
+  - Use of Github Issues and User Stories
 
 ## User Stories
 
@@ -101,6 +103,7 @@
   - The booking page consists of a form which is made using crispy forms
   - The user must input their name, email, requested class and requested date
   - Once this is done if the fields are correct the form is recorded in the database
+  - When booking, a user must enter the exact same username and email they used for signup or the booking may fail
 ![booking-page](https://user-images.githubusercontent.com/97538312/203824345-9ed984e1-9236-43f5-b7b9-35d97e2bd7ae.jpg)
 
 ## Manage Bookings
@@ -108,15 +111,13 @@
   - If no bookings are reorded by the user, they are redirected to the booking page
 
 ## Bugs encountered
-  - I encountered a bug with the bookings when selecting a date
-  - The date selected on a calendar was coming up as an invalid date and when debugging it was shown as an incorrect format
-  - The format was coming up as 'yyyy-mm-dd' even though I specified to record it as '%d-%m-%Y' in my views.py file
   - Backports.zoneinfo was shown as an error when deploying to Heroku
   - I fixed this by specifying an older python version in a runtime.txt file
   - My csrf token was getting rejected so I addressed this by specifying a trusted url in my settings.py file
-
+  - In manage bookings, the class name does not show up, however it does display in delete bookings.
+  
 ## Unfixed Bugs 
-  -
+  - If a user makes a booking and their username or email don't match their signup details, the booking is recorded in the database but won't show up for the user in manage bookings.
   
 ## Testing 
 - For the testing process I used print statements and kept running the code after a new function was added which was noticeable when run
