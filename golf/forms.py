@@ -12,7 +12,7 @@ class CustomerForm(forms.ModelForm):
 
     class Meta:
         model = Customer
-        fields = ('name', 'email',)
+        fields = ('username', 'email',)
 
 
 class BookingForm(forms.ModelForm):

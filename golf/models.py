@@ -28,11 +28,11 @@ class ClassName(models.Model):
 
 class Customer(models.Model):
     customer_id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=50, blank=False)
+    username = models.CharField(max_length=50, blank=False)
     email = models.EmailField(max_length=100, default='')
 
     def __str__(self):
-        return self.name
+        return self.username
 
 
 class Booking(models.Model):

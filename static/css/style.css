@@ -23,8 +23,10 @@ body {
     transition: 200ms ease-in-out;
 }
 
+/* Navbar style on scroll */
+
 .bg-color.scrolled {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.801);
 }
 
 /* Home Section */
@@ -329,12 +331,6 @@ footer {
         text-align: center;
     }
 
-    .about-btn {
-        height: 40px;
-        width: 160px;
-        margin-top: 25%;
-
-    }
 
     .about-btn a {
         font-size: 16px;
@@ -389,6 +385,7 @@ footer {
         text-align: center;
         top: 35%;
     }
+
 }
 
 @media screen and (max-width:565px) {
@@ -400,5 +397,16 @@ footer {
         font-size: 40px;
         top: 15%;
     }
-
 }
+
+@media screen and (max-width:375px) {
+    .about-btn {
+        height: 40px;
+        width: 160px;
+        margin-top: 15%;
+
+    }
+}
+
+/* 404 page style */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@100;300&display=swap')

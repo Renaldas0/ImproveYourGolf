@@ -1,3 +1,11 @@
+// Navbar style on scroll 
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $(".bg-color");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});
+
 function datePicker() {
     $("#id_requested_date").datepicker({
         dateFormat: 'dd/mm/yy'

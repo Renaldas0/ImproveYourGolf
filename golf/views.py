@@ -113,7 +113,7 @@ class BookingEnquiry(View):
             # Fetch information from forms
             customer_class_name = request.POST.get('class_name')
             customer_requested_date = request.POST.get('requested_date')
-            customer_name = request.POST.get('name')
+            customer_name = request.POST.get('username')
 
             # Convert date in to format required by django
             date_formatted = datetime.strptime(
@@ -180,7 +180,7 @@ class BookingEnquiry(View):
             messages.add_message(
                 request, messages.ERROR,
                 "Something went wrong with your form "
-                "- please make sure your name and email address is in the"
+                "- please make sure your username and email address is in the"
                 " correct format.")
 
         return render(request, 'booking.html',
@@ -236,7 +236,7 @@ class ManageBooking(View):
             if current_booking is None:
                 messages.add_message(
                     request, messages.WARNING,
-                    "You have no lesson booked. No worries! "
+                    "You have no lessons booked. No worries! "
                     "You can book here.")
                 url = reverse('booking')
                 return HttpResponseRedirect(url)
@@ -322,8 +322,9 @@ class EditBooking(View):
             # get the post information from the form
             customer_requested_date = request.POST.get('requested_date')
             # Convert date into format required by django
-            date_formatted = datetime.datetime.strptime(
-                customer_requested_date, "%d/%m/%Y").strftime('%Y-%m-%d')
+            date_formatted = datetime.strptime(
+                customer_requested_date, '%d/%m/%Y')
+            date_formatted.strftime('%Y/%m/%d')
             # Update the existing booking with the form data.
             booking.booking_id = booking_id
             # Pass formatted date to prevent it from saving incorrectly

@@ -8,7 +8,7 @@ from .models import Customer, ClassName, Booking
 @admin.register(Customer)
 class CustomerAdmin(admin.ModelAdmin):
     """Customer Admin"""
-    list_display = ('customer_id', 'name', 'email',)
+    list_display = ('customer_id', 'username', 'email',)
 
 
 @admin.register(ClassName)
