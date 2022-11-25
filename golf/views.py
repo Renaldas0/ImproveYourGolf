@@ -1,4 +1,5 @@
 import datetime
+from datetime import datetime, date
 from .models import Customer, ClassName, Booking
 from django.shortcuts import render, reverse, get_object_or_404
 from django.conf import settings
@@ -12,7 +13,7 @@ from django.contrib.auth.models import User
 from django.utils.timezone import now
 from .forms import CustomerForm, BookingForm
 
-
+today = datetime.now().date()
 classes_total = ClassName.objects.filter(booking__status='Available').count()
 booking_places = Booking.objects.values('places').count()
 
@@ -112,11 +113,12 @@ class BookingEnquiry(View):
             # Fetch information from forms
             customer_class_name = request.POST.get('class_name')
             customer_requested_date = request.POST.get('requested_date')
-            customer_name = request.POST.get('full_name')
+            customer_name = request.POST.get('name')
 
             # Convert date in to format required by django
-            date_formatted = datetime.datetime.strptime(
-                customer_requested_date, "%d/%m/%Y").strftime('%Y/%m/%d')
+            date_formatted = datetime.strptime(
+                customer_requested_date, '%d/%m/%Y')
+            date_formatted.strftime('%Y/%m/%d')
 
             # Check to see how many bookings exist at that date
             classes_booked = check_availabilty(
@@ -168,7 +170,7 @@ class BookingEnquiry(View):
                 f"Thank you {customer_name}, for booking "
                 f"{customer_class_name} on "
                 f"{customer_requested_date}! \
-                            We are looking forward to sweating with you!")
+                            We are looking forward to golfing with you!")
 
             # Return blank forms so the same enquiry isn't sent twice.
             url = reverse('booking')
@@ -234,7 +236,7 @@ class ManageBooking(View):
             if current_booking is None:
                 messages.add_message(
                     request, messages.WARNING,
-                    "You have no session booked. No worries! "
+                    "You have no lesson booked. No worries! "
                     "You can book here.")
                 url = reverse('booking')
                 return HttpResponseRedirect(url)
@@ -243,15 +245,6 @@ class ManageBooking(View):
                 return render(
                     request, 'manage_booking.html',
                     {'booking': current_booking})
-
-        else:
-            # Prevent users accessing this page if they are not logged in
-            messages.add_message(
-                request, messages.ERROR, "You must be logged in to "
-                "manage your bookings.")
-
-            url = reverse('booking')
-            return HttpResponseRedirect(url)
 
 
 class EditBooking(View):
@@ -264,7 +257,7 @@ class EditBooking(View):
             booking = get_object_or_404(
                 Booking, booking_id=booking_id)
             # Prevent customers editing outdated bookings
-            today = datetime.datetime.now().date()
+            today = date.today()
             if booking.requested_date < today:
                 messages.add_message(
                     request, messages.ERROR, "You are trying to edit a "
@@ -373,7 +366,7 @@ class DeleteBooking(View):
                 Booking, booking_id=booking_id)
             customer = get_customer_instance(request, User)
             # Prevent customers editing outdated bookings
-            today = datetime.datetime.now().date()
+            today = date.today()
             if booking.requested_date < today:
                 messages.add_message(
                     request, messages.ERROR, "You are trying to edit a "
@@ -419,5 +412,4 @@ class DeleteBooking(View):
         current_booking = fetch_booking(request, User)
         # Return user to manage booking page
 
-        return render(request, 'manage_booking.html',
-                      {'booking': current_booking})
+        return render(request, 'index.html')

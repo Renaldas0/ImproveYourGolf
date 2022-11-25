@@ -10,14 +10,13 @@
 {% block content %}
 
 {% load static %}
-<div class="page-header align-items-start min-vh-100"
-    style="background-image: url({% static 'images/bike_pink.jpg' %});" loading="lazy">
-    <div class="container-fluid">
+<div class="page-header align-items-start min-vh-100">
+    <div class="container-fluid booking-container">
         <div class="row d-flex justify-content-center">
             <div class="col-sm-8 text-center">
-                <h2 class=" mt-2 mb-3">Manage your bookings</h2>
+                <h2 class=" mt-2 mb-3 manage_booking">Manage your bookings</h2>
                 <!-- Let the user get all the info to ensure that they are using the right credentials -->
-                <p class="mt-2">Hello, there!</strong>!</p>
+                <p class="mt-2"><strong>Hello, there!</strong>!</p>
                 <p class="mt-2">You can make changes to your bookings by using the options below.</p>
             </div>
         </div>
@@ -33,16 +32,18 @@
                                 <h5>Booking ID: {{ booking.booking_id }} </h5>
                             </li>
                             <li class="booking-item">Class: {{ booking.class_name }} </li>
-                            <li class="booking-item">Date: <span class="booking-date"
+                            <li class="booking-item">Date Booked: <span class="booking-date"
                                     id="{{ booking.requested_date }}">{{ booking.requested_date|date:"d/m/Y"}}</span>
                             </li>
                             <div class="text-center">
                                 <a href="{% url 'edit_booking' booking.booking_id %}"
-                                    class="button btn submit-button inline-btn">Edit Booking</a>
+                                    class="button btn submit-button inline-btn"><button class="btn btn-warning">Edit
+                                        Booking</button></a>
                                 <a href="{% url 'delete_booking' booking.booking_id %}"
-                                    class="button btn cancel-button inline-btn">Cancel Booking</a>
+                                    class="button btn cancel-button inline-btn"><button class="btn btn-danger">Cancel
+                                        Booking</button></a>
                             </div>
-                            <hr style="color: #007408;">
+                            <hr style="color: #018f0a;">
                             </li>
                         </ul>
                     </div>

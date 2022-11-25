@@ -280,6 +280,17 @@ footer {
     border-bottom-left-radius: 30px;
 }
 
+/* Manage Bookings */
+.manage_booking {
+    font-size: 35px;
+}
+
+.booking-container {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 95%;
+}
+
 /* Media Queries*/
 
 @media screen and (max-width:1048px) {

@@ -1,10 +1,9 @@
-{% extends "base.html" %}
+{% extends "index.html" %}
 
 {% block content %}
 
 {% load static %}
-<div class="page-header align-items-start min-vh-100"
-    style="background-image: url({% static 'images/bike_pink.jpg' %});" loading="lazy">
+<div class="page-header align-items-start min-vh-100">
     <div class="container-fluid">
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-sm-8 col-md-6 col-lg-4 text-center mb-3">
@@ -27,7 +26,8 @@
 
                     <!-- Button to open modal -->
                     <button type="button" data-toggle="modal" data-target="#confirmationModal" href="#confirmationModal"
-                        class="delete-booking-button button mt-4 text-center" id="delete-booking">Cancel Your
+                        class="delete-booking-button button mt-4 text-center btn btn-danger" id="delete-booking">Cancel
+                        Your
                         Booking</button>
 
                     <!-- Modal https://getbootstrap.com/docs/4.0/components/modal/ -->
@@ -47,7 +47,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-warning close" data-dismiss="modal">I changed
-                                        my mind...I want to sweat!</button>
+                                        my mind...I want to be there!!</button>
                                     <button type="submit" class="delete-booking-button btn btn-danger">Cancel
                                         it.</button>
                                 </div>
