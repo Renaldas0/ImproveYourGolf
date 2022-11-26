@@ -139,9 +139,10 @@
 ## Testing 
 - For the testing process I used print statements and kept running the code after a new function was added which was noticeable when run
 - I wrote code for the urls, models and views in tests.py
-- Verified the HTML using the W3C HTML validator and all tests passed
-- Verified CSS using the Jigsaw w3 css validator to confirm all css is valid
+- Verified the HTML using the W3C HTML validator and all tests passed : https://validator.w3.org/
+- Verified CSS using the Jigsaw w3 css validator to confirm all css is valid : https://jigsaw.w3.org/css-validator/
 - Tested the python code by running it through PEP8 online :  http://pep8online.com/
+- JsHint was used to check JavaScript code : https://jshint.com/
 - The only errors were to indicate that the line is too long
 - I manually tested that errors in the form fields show up
 - Tested that messages get displayed when Logging in, making a booking, editing bookings, deleting bookings and signing out.
