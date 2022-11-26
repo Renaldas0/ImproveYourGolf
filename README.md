@@ -134,7 +134,9 @@
   
 ## Unfixed Bugs 
   - If a user makes a booking and their username or email don't match their signup details, the booking is recorded in the database but won't show up for the user in manage bookings.
-  - Currently in the manage bookings page, the class name is not showing up. This works in delete booking
+  - Currently in the manage bookings page, the class name is not showing up. This works however in delete booking
+  ![booking-error](https://user-images.githubusercontent.com/97538312/204110421-f770f5b9-f1c4-4eab-8b38-67b2b545c4fa.jpg)
+
   
 ## Testing 
 - For the testing process I used print statements and kept running the code after a new function was added which was noticeable when run
