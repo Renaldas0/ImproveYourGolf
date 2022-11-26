@@ -156,6 +156,20 @@
 ## Lighthouse test 
 ![lighthouse](https://user-images.githubusercontent.com/97538312/204099655-1f7ccfd5-edce-49d2-9a56-dc051040ef09.jpg)
 
+## Design
+ **The website was designed using Photoshop**
+ - Please note that the final product does differ from the early stage mockups
+ 
+ **Main page**
+![main-design](https://user-images.githubusercontent.com/97538312/204100537-e8084126-d4db-4596-a682-8e4e0f2b0353.jpg)
+**About us**
+![goal-design](https://user-images.githubusercontent.com/97538312/204100539-42e5f141-5d0a-4a2f-b98d-0fac17ed2b0a.jpg)
+**Classes**
+![classes-deisign](https://user-images.githubusercontent.com/97538312/204100541-4dde3d78-0f31-40eb-ab3c-727c529fd0c7.jpg)
+**Register form**
+![register-design](https://user-images.githubusercontent.com/97538312/204100548-2a37501b-e9dd-4029-bce5-3f114536f84b.jpg)
+
+
 
 ## Deployment 
   - I deployed the project to heroku which is a cloud based hosting platform https://www.heroku.com/
