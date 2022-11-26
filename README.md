@@ -98,6 +98,10 @@
   - When the register or login option is selected by the user, they are redirected to the form page.
   - These forms are of very simplistic design for easy and satisfying user experience.
   - Both forms are designed to look the same and contain the same navbar and footer elements as on the main page.
+
+## Register form
+![signup](https://user-images.githubusercontent.com/97538312/204099776-1019a34c-b1ba-4175-a117-291956594794.jpg)
+
 ## Sign in form
 ![sign-in-screenshot](https://user-images.githubusercontent.com/97538312/202302531-b3fa0508-89ad-47df-8140-16c6126b0bef.jpg)
 
@@ -116,9 +120,9 @@
   - Users can see their made bookings in the manage bookings section
   - If no bookings are reorded by the user, they are redirected to the booking page
   - When a user wants to delete their booking an extra modal pops up to confirm this 
-  - 
+   
    ![manage_booking](https://user-images.githubusercontent.com/97538312/204099619-976b5c43-e4fb-4e79-9861-e1c8e164e79a.jpg)
-  ![cancel_booking](https://user-images.githubusercontent.com/97538312/204099570-d27d110c-4923-4cfb-a046-f38dc305f7ba.jpg)
+
   ![cancel_modal](https://user-images.githubusercontent.com/97538312/204099563-3ec26c06-4a16-43ef-93df-1a145cf7d53b.jpg)
 
 
@@ -130,6 +134,7 @@
   
 ## Unfixed Bugs 
   - If a user makes a booking and their username or email don't match their signup details, the booking is recorded in the database but won't show up for the user in manage bookings.
+  - Currently in the manage bookings page, the class name is not showing up. This works in delete booking
   
 ## Testing 
 - For the testing process I used print statements and kept running the code after a new function was added which was noticeable when run
