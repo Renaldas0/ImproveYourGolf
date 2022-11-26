@@ -9,6 +9,8 @@
 
 ## Agile Methodology
   - Use of Github Issues and User Stories
+  ![user_stories](https://user-images.githubusercontent.com/97538312/204099265-eb4c50b9-ed7d-4d70-b27c-5a2d807fd17e.jpg)
+
 
 ## User Stories
 
@@ -66,7 +68,7 @@
   - For extra functionality there is a button which if clicked simply scrolls down to the About Us section
   - Clicking on sections in the navbar scrolls the page down to that desired section
   - Clicking on the heading will also scroll the page back up to the top
-
+  
 ## Main section
 ![main-screenshot](https://user-images.githubusercontent.com/97538312/201192933-98a6b956-1bc9-43e9-84d8-8ba22933ffd2.jpg)
 
@@ -100,15 +102,25 @@
 ![sign-in-screenshot](https://user-images.githubusercontent.com/97538312/202302531-b3fa0508-89ad-47df-8140-16c6126b0bef.jpg)
 
 ## Booking
+  - The booking system required a database to store in formation. For this 3 models were created. They store, Customer, Classes and the Booking details.
   - The booking page consists of a form which is made using crispy forms
   - The user must input their name, email, requested class and requested date
   - Once this is done if the fields are correct the form is recorded in the database
   - When booking, a user must enter the exact same username and email they used for signup or the booking may fail
 ![booking-page](https://user-images.githubusercontent.com/97538312/203824345-9ed984e1-9236-43f5-b7b9-35d97e2bd7ae.jpg)
+  - The use of a calendar with the help of Jquery is in place for easy date selection 
+  ![calendar](https://user-images.githubusercontent.com/97538312/204099599-90ea3c12-3f52-48d8-8dac-d4f8b5a07831.jpg)
+
 
 ## Manage Bookings
   - Users can see their made bookings in the manage bookings section
   - If no bookings are reorded by the user, they are redirected to the booking page
+  - When a user wants to delete their booking an extra modal pops up to confirm this 
+  - 
+   ![manage_booking](https://user-images.githubusercontent.com/97538312/204099619-976b5c43-e4fb-4e79-9861-e1c8e164e79a.jpg)
+  ![cancel_booking](https://user-images.githubusercontent.com/97538312/204099570-d27d110c-4923-4cfb-a046-f38dc305f7ba.jpg)
+  ![cancel_modal](https://user-images.githubusercontent.com/97538312/204099563-3ec26c06-4a16-43ef-93df-1a145cf7d53b.jpg)
+
 
 ## Bugs encountered
   - Backports.zoneinfo was shown as an error when deploying to Heroku
@@ -128,6 +140,17 @@
 - The only errors were to indicate that the line is too long
 - I manually tested that errors in the form fields show up
 - Tested that messages get displayed when Logging in, making a booking, editing bookings, deleting bookings and signing out.
+
+## Message Testing
+![messages](https://user-images.githubusercontent.com/97538312/204099520-05e868bd-7f8e-4866-92cc-5303c27568e2.jpg)
+![cancelled-message](https://user-images.githubusercontent.com/97538312/204099539-12e19193-ee4f-47c0-b3a4-81b10b902ab0.jpg)
+
+## Email field testing 
+![email_field_test](https://user-images.githubusercontent.com/97538312/204099630-8446fcaa-fc3a-42c9-a040-fe2ebcc00e19.jpg)
+
+## Lighthouse test 
+![lighthouse](https://user-images.githubusercontent.com/97538312/204099655-1f7ccfd5-edce-49d2-9a56-dc051040ef09.jpg)
+
 
 ## Deployment 
   - I deployed the project to heroku which is a cloud based hosting platform https://www.heroku.com/
