@@ -75,6 +75,15 @@
   - Provide an easy UI and UX with it's easy to read design
   - The button in the middle takes the user down to the next section
 
+## Navbar to not logged in users 
+  - Log in and register options are available
+  - Manage bookings does not show up 
+  - Log out option is not shown
+![nav_not_logged_in](https://user-images.githubusercontent.com/97538312/204134958-fe247587-a0fe-441e-afae-74adcf072acd.jpg)
+
+## Navbar to logged in users
+![logged_in_nav](https://user-images.githubusercontent.com/97538312/204134974-443be7a9-cb17-4560-91aa-b48721dd5ceb.jpg)
+
 ## About Us
 ![about-us](https://user-images.githubusercontent.com/97538312/204131322-e8051a0d-a255-43f4-950d-f753532350f2.jpg)
   - In this section a user is informed about the mission of the ImproveYourGolf company
@@ -112,6 +121,10 @@
 ## Sign in form
 ![sign-in-screenshot](https://user-images.githubusercontent.com/97538312/202302531-b3fa0508-89ad-47df-8140-16c6126b0bef.jpg)
 
+## Sign out
+![sign_out](https://user-images.githubusercontent.com/97538312/204134892-8879b46d-5a4c-4626-bde8-5c34179e3c11.jpg)
+
+
 ## Booking
   - The booking system required a database to store in formation. For this 3 models were created. They store, Customer, Classes and the Booking details.
   - The booking page consists of a form which is made using crispy forms
@@ -127,6 +140,9 @@
   - Users can see their made bookings in the manage bookings section
   - If no bookings are reorded by the user, they are redirected to the booking page
   - When a user wants to delete their booking an extra modal pops up to confirm this 
+  - The bookings are displayed in Rows and 2 bookings show up per row
+  ![booking_display](https://user-images.githubusercontent.com/97538312/204134931-d87036da-f066-44c6-823b-433af0dd653f.jpg)
+
   
 ### Manage booking layout
    ![manage_booking](https://user-images.githubusercontent.com/97538312/204099619-976b5c43-e4fb-4e79-9861-e1c8e164e79a.jpg)
@@ -140,10 +156,15 @@
 
 
 ## Bugs encountered
-  - Backports.zoneinfo was shown as an error when deploying to Heroku
-  - I fixed this by specifying an older python version in a runtime.txt file
+  - Backports.zoneinfo wouldn't build wheels and was shown as an error when deploying to Heroku and therefore the deployment would fail
+  - I fixed this by specifying an older python version in a runtime.txt file which was suggested by heroku
+  
   - My csrf token was getting rejected so I addressed this by specifying a trusted url in my settings.py file
   - In manage bookings, the class name does not show up, however it does display in delete bookings.
+
+  - Static files would not load on heroku but everything was fine on my live server.
+  - This issue was fixed by adding Cloudinary details separately instead of a Cloudinary url even though that is far more practical.
+  - The final fix attempted was to set debug to False and this instantly loaded up all static files.
   
 ## Unfixed Bugs 
   - If a user makes a booking and their username or email don't match their signup details, the booking is recorded in the database but won't show up for the user in manage bookings.
@@ -165,6 +186,9 @@
 ## Message Testing
 ![messages](https://user-images.githubusercontent.com/97538312/204099520-05e868bd-7f8e-4866-92cc-5303c27568e2.jpg)
 ![cancelled-message](https://user-images.githubusercontent.com/97538312/204099539-12e19193-ee4f-47c0-b3a4-81b10b902ab0.jpg)
+
+### Date in the past
+![booking_past_date](https://user-images.githubusercontent.com/97538312/204134911-5242cde1-407d-416c-808e-b3649726f0f8.jpg)
 
 ## Email field testing 
 ![email_field_test](https://user-images.githubusercontent.com/97538312/204099630-8446fcaa-fc3a-42c9-a040-fe2ebcc00e19.jpg)
@@ -188,15 +212,26 @@
 
 
 ## Deployment 
+  ### Heroku 
   - I deployed the project to heroku which is a cloud based hosting platform https://www.heroku.com/
-  - The database is deployed using ElephantSQL 
+  - Heroku took care of the config variables such as : DATABASE_URL, SECRET_KEY and CLOUDINARY_URL
+  ### Elephant SQL
+  - The database is deployed using ElephantSQL : https://www.elephantsql.com/
   - This is done by creating a new instance on ElephantSQL 
   - Select Table quries in BROWSER and select an option that looks familiar
   - The DATABASE URL is then pasted into heroku config vars and into my env.py file 
-  - The code is deployed and pushed to Github which is linked to heroku
+  ### Github 
+  - The code institute full template is used for setting up this project on gitpod
+  - The code is deployed and pushed to a Github branch which is then linked to heroku and set to automatically deploy with every push
+  ### Cloudinary
+  - Static files and images are hosted on Cloudinary : https://cloudinary.com/
+  - This is done by adding all images to cloudinary and linking my Cloud name, API key and API secret to heroku and env.py file
 
 ## Credits
-  - I traced back to the I think therefore I blog project to set up my python files correctly
-  - Errors during the build process were fixed with the help of slack community and stackoverflow
-  - These helped me find a solution to my backports.zoneinfo issues and csrf token issues.
+  - I traced back to the "I think therefore I blog" project to set up my python and Django files correctly
+  - This also helped a lot when building my models and views
+  - Errors during the build process were fixed with the help of slack community, Tutor support and stackoverflow
+  - Stackoverflow suggested the use of runtime.txt and that helped me find a solution to my backports.zoneinfo issues.
+  - The csrf token issue was also solved with the help of stackoverflow.
+  - Tutor support helped me discover why my static files were not loading
   
