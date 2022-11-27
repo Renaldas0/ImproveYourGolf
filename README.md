@@ -180,6 +180,11 @@
   - If a user makes a booking and their username or email don't match their signup details, the booking is recorded in the database but won't show up for the user in manage bookings.
   - Currently in the manage bookings page, the class name is not showing up. This works however in delete booking
   ![booking-error](https://user-images.githubusercontent.com/97538312/204110421-f770f5b9-f1c4-4eab-8b38-67b2b545c4fa.jpg)
+  
+  - I am also getting an error in the console in developer tools for alert.js JavaScript. This does not seem to cause any issues in the website.
+  
+  ![javascript_error](https://user-images.githubusercontent.com/97538312/204158459-8bc63104-7e62-4f8f-bb34-ccd9bcbae83f.jpg)
+
 
   
 ## Testing 
