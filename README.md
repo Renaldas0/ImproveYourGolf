@@ -79,9 +79,15 @@
   - Log in and register options are available
   - Manage bookings does not show up 
   - Log out option is not shown
+  
 ![nav_not_logged_in](https://user-images.githubusercontent.com/97538312/204134958-fe247587-a0fe-441e-afae-74adcf072acd.jpg)
 
 ## Navbar to logged in users
+  - Option to make a booking
+  - Option to manage bookings
+  - Login and Register are now hidden
+  - Logout option is visible
+  
 ![logged_in_nav](https://user-images.githubusercontent.com/97538312/204134974-443be7a9-cb17-4560-91aa-b48721dd5ceb.jpg)
 
 ## About Us
