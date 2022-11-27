@@ -64,13 +64,20 @@
   - The site is developed to be a single scroll page except for the register and login forms
   - The main section loads up with an image displaying the theme of the website (golf) and the title clearly visible to users
   - The navbar is compact into a hamburger menu icon and is transparent if the page is at the complete top
-  - Once the user scrolls for better user experience, the navbar is set to always be visible and a background colour appears
+  - Once the user scrolls for better user experience, the navbar is set to always be visible and a background colour appears using JavaScript
   - For extra functionality there is a button which if clicked simply scrolls down to the About Us section
   - Clicking on sections in the navbar scrolls the page down to that desired section
   - Clicking on the heading will also scroll the page back up to the top
   
 ## Main section
 ![main-screenshot](https://user-images.githubusercontent.com/97538312/201192933-98a6b956-1bc9-43e9-84d8-8ba22933ffd2.jpg)
+  - The landing page is designed to immediately inform a user that they are on a golf website
+  - Provide an easy UI and UX with it's easy to read design
+  - The button in the middle takes the user down to the next section
+
+## About Us
+![about-us](https://user-images.githubusercontent.com/97538312/204131322-e8051a0d-a255-43f4-950d-f753532350f2.jpg)
+  - In this section a user is informed about the mission of the ImproveYourGolf company
 
 
 - **Classes**
@@ -91,8 +98,8 @@
   - The coaches section consists of 2 images that show the coaches and a brief description
   - The responsive feature also changes the layout for these 2 divs, making them fall one under the other for smaller devices
 ![coach-screenshot](https://user-images.githubusercontent.com/97538312/202302482-35e26dd9-6f8f-4402-9230-0fded587fbc0.jpg)
-
-
+  - Responsive layout
+![coaches-responsive](https://user-images.githubusercontent.com/97538312/204131454-abd62b24-d1ee-4b00-9c17-4d1206b0a69a.jpg)
 
 - **Register & Login Forms**
   - When the register or login option is selected by the user, they are redirected to the form page.
@@ -120,9 +127,15 @@
   - Users can see their made bookings in the manage bookings section
   - If no bookings are reorded by the user, they are redirected to the booking page
   - When a user wants to delete their booking an extra modal pops up to confirm this 
-   
+  
+### Manage booking layout
    ![manage_booking](https://user-images.githubusercontent.com/97538312/204099619-976b5c43-e4fb-4e79-9861-e1c8e164e79a.jpg)
+### Edit booking layout 
+![edit_booking](https://user-images.githubusercontent.com/97538312/204131567-1cabfcbb-4d2d-473e-9b91-c6df465f3ae7.jpg)
 
+### Cancel Booking layout
+![cancel-booking](https://user-images.githubusercontent.com/97538312/204131623-129f9ac8-a66d-4e89-b6b6-00edefb75b58.jpg)
+### Cancellation modal to confirm
   ![cancel_modal](https://user-images.githubusercontent.com/97538312/204099563-3ec26c06-4a16-43ef-93df-1a145cf7d53b.jpg)
 
 
