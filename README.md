@@ -214,14 +214,25 @@
 ## Deployment 
   ### Heroku 
   - I deployed the project to heroku which is a cloud based hosting platform https://www.heroku.com/
+    - Log in to Heroku
+    - Select `New` and create a new app
+    - Create an app name (as similar to repo name as possible)
+    - Select a Region (Europe for me)
+    - Click on `Create app`
   - Heroku took care of the config variables such as : DATABASE_URL, SECRET_KEY and CLOUDINARY_URL
   ### Elephant SQL
   - The database is deployed using ElephantSQL : https://www.elephantsql.com/
-  - This is done by creating a new instance on ElephantSQL 
-  - Select Table quries in BROWSER and select an option that looks familiar
-  - The DATABASE URL is then pasted into heroku config vars and into my env.py file 
-  ### Github 
+    - This is done by creating a new instance on ElephantSQL 
+    - Select Table quries in BROWSER and select an option that looks familiar
+    - The DATABASE URL is then pasted into heroku config vars and into my env.py file 
+  ### Github & Gitpod
   - The code institute full template is used for setting up this project on gitpod
+  - When making a new repository
+    -  Click `No Template` button
+    -  Select the desired template
+    -  Add a repository name
+    -   To create a Gitpod workspace you then need to click `Gitpod`
+    -   This will then start to build a workspace
   - The code is deployed and pushed to a Github branch which is then linked to heroku and set to automatically deploy with every push
   ### Cloudinary
   - Static files and images are hosted on Cloudinary : https://cloudinary.com/
