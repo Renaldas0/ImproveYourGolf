@@ -106,6 +106,8 @@
 ![classes_notauth](https://user-images.githubusercontent.com/97538312/201193183-2252d2ed-a915-4d1d-b734-fa61ae8fb172.jpg)
 
 ## Classes to logged in viewers 
+  - The book now button is shown
+  
 ![classes_auth](https://user-images.githubusercontent.com/97538312/201193253-d616c879-8851-4726-9fb6-ada64418b095.jpg)
 
 
@@ -113,7 +115,9 @@
   - The coaches section consists of 2 images that show the coaches and a brief description
   - The responsive feature also changes the layout for these 2 divs, making them fall one under the other for smaller devices
 ![coach-screenshot](https://user-images.githubusercontent.com/97538312/202302482-35e26dd9-6f8f-4402-9230-0fded587fbc0.jpg)
+
   - Responsive layout
+  
 ![coaches-responsive](https://user-images.githubusercontent.com/97538312/204131454-abd62b24-d1ee-4b00-9c17-4d1206b0a69a.jpg)
 
 - **Register & Login Forms**
