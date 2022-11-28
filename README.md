@@ -79,9 +79,15 @@
   - Log in and register options are available
   - Manage bookings does not show up 
   - Log out option is not shown
+  
 ![nav_not_logged_in](https://user-images.githubusercontent.com/97538312/204134958-fe247587-a0fe-441e-afae-74adcf072acd.jpg)
 
 ## Navbar to logged in users
+  - Option to make a booking
+  - Option to manage bookings
+  - Login and Register are now hidden
+  - Logout option is visible
+  
 ![logged_in_nav](https://user-images.githubusercontent.com/97538312/204134974-443be7a9-cb17-4560-91aa-b48721dd5ceb.jpg)
 
 ## About Us
@@ -100,6 +106,8 @@
 ![classes_notauth](https://user-images.githubusercontent.com/97538312/201193183-2252d2ed-a915-4d1d-b734-fa61ae8fb172.jpg)
 
 ## Classes to logged in viewers 
+  - The book now button is shown
+  
 ![classes_auth](https://user-images.githubusercontent.com/97538312/201193253-d616c879-8851-4726-9fb6-ada64418b095.jpg)
 
 
@@ -107,7 +115,9 @@
   - The coaches section consists of 2 images that show the coaches and a brief description
   - The responsive feature also changes the layout for these 2 divs, making them fall one under the other for smaller devices
 ![coach-screenshot](https://user-images.githubusercontent.com/97538312/202302482-35e26dd9-6f8f-4402-9230-0fded587fbc0.jpg)
+
   - Responsive layout
+  
 ![coaches-responsive](https://user-images.githubusercontent.com/97538312/204131454-abd62b24-d1ee-4b00-9c17-4d1206b0a69a.jpg)
 
 - **Register & Login Forms**
@@ -170,6 +180,11 @@
   - If a user makes a booking and their username or email don't match their signup details, the booking is recorded in the database but won't show up for the user in manage bookings.
   - Currently in the manage bookings page, the class name is not showing up. This works however in delete booking
   ![booking-error](https://user-images.githubusercontent.com/97538312/204110421-f770f5b9-f1c4-4eab-8b38-67b2b545c4fa.jpg)
+  
+  - I am also getting an error in the console in developer tools for alert.js JavaScript. This does not seem to cause any issues in the website.
+  
+  ![javascript_error](https://user-images.githubusercontent.com/97538312/204158459-8bc63104-7e62-4f8f-bb34-ccd9bcbae83f.jpg)
+
 
   
 ## Testing 
@@ -214,14 +229,25 @@
 ## Deployment 
   ### Heroku 
   - I deployed the project to heroku which is a cloud based hosting platform https://www.heroku.com/
+    - Log in to Heroku
+    - Select `New` and create a new app
+    - Create an app name (as similar to repo name as possible)
+    - Select a Region (Europe for me)
+    - Click on `Create app`
   - Heroku took care of the config variables such as : DATABASE_URL, SECRET_KEY and CLOUDINARY_URL
   ### Elephant SQL
   - The database is deployed using ElephantSQL : https://www.elephantsql.com/
-  - This is done by creating a new instance on ElephantSQL 
-  - Select Table quries in BROWSER and select an option that looks familiar
-  - The DATABASE URL is then pasted into heroku config vars and into my env.py file 
-  ### Github 
+    - This is done by creating a new instance on ElephantSQL 
+    - Select Table quries in BROWSER and select an option that looks familiar
+    - The DATABASE URL is then pasted into heroku config vars and into my env.py file 
+  ### Github & Gitpod
   - The code institute full template is used for setting up this project on gitpod
+  - When making a new repository
+    -  Click `No Template` button
+    -  Select the desired template
+    -  Add a repository name
+    -   To create a Gitpod workspace you then need to click `Gitpod`
+    -   This will then start to build a workspace
   - The code is deployed and pushed to a Github branch which is then linked to heroku and set to automatically deploy with every push
   ### Cloudinary
   - Static files and images are hosted on Cloudinary : https://cloudinary.com/
